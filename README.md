@@ -1,4 +1,4 @@
-# Aplikasi-Biro-Travel
-adalah aplikai info wisata dan pemesanan paket wisata.
+# Aplikasi-Photography
+adalah aplikai informasi photography.
 
 impor database kemudian sesuaikan file koneksi database.
