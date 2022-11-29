@@ -90,23 +90,24 @@ $db = new wisata();
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<?php foreach ($db->tampil_header() as $val) { ?>
+						<li data-target="#myCarousel" data-slide-to="<?= $val['id']; ?>"></li>
+					<?php
+					}; ?>
 				</ol>
 
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="images/header/Wedding.jpg" alt="Los Angeles" style="width:100%;">
+						<img src="images/header/Prewedding.jpg" alt="Wedding" style="width:100%;">
 					</div>
 
-					<div class="item">
-						<img src="images/header/Akad_nikah.jpg" alt="Chicago" style="width:100%;">
-					</div>
-
-					<div class="item">
-						<img src="images/header/Buku_tahunan.jpg" alt="New york" style="width:100%;">
-					</div>
+					<?php foreach ($db->tampil_header() as $val) { ?>
+						<div class="item">
+							<img src="images/header/<?= $val['image'] ?>" alt="<?= $val['nama']; ?>" style="width:100%;">
+						</div>
+					<?php
+					}; ?>
 				</div>
 
 				<!-- Left and right controls -->
