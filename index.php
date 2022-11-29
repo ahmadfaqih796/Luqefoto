@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 include 'class/wisata.php';
 
-$db= new wisata();
+$db = new wisata();
 
 
 ?>
@@ -10,8 +10,11 @@ $db= new wisata();
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Apry Foto</title>
@@ -20,14 +23,14 @@ $db= new wisata();
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
- 
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
@@ -37,7 +40,7 @@ $db= new wisata();
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -53,7 +56,7 @@ $db= new wisata();
 	<!-- CS Select -->
 	<link rel="stylesheet" href="css/cs-select.css">
 	<link rel="stylesheet" href="css/cs-skin-border.css">
-	
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -63,89 +66,93 @@ $db= new wisata();
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<style type="text/css">
-<!--
-.style1 {color: #FF5F00}
--->
-    </style>
-	</head>
-	<body>
-		<div id="fh5co-wrapper">
+		.style1 {
+			color: #FF5F00
+		}
+	</style>
+</head>
+
+<body>
+	<div id="fh5co-wrapper">
 		<div id="fh5co-page">
 
-		<?php include("header.php") 
+			<?php include("header.php")
 			?>
 
-		<!-- end:header-top -->
-	
-		<div class="fh5co-hero">
-			
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/studio.jpg);">
-				<div class="desc">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-5 col-md-5">
-								<div class="tabulation animate-box">
+			<!-- end:header-top -->
 
-								  <!-- Nav tabs -->
-								   
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
 
-								   <!-- Tab panes -->
-									
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/header/Wedding.jpg" alt="Los Angeles" style="width:100%;">
+					</div>
 
-								</div>
-							</div>
-							<div class="desc2 animate-box">
-							  <div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-								  <h2 align="center" class="text-center "><span class="style1">Weny Foto </span></h2>
-									<center class="style1">
-									  <span class="price">Abadikan Moment Bersama Kami ... Banyak Pilihan Paketnya Loh							      </span>
-							    </center>
-								  
-									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
-							  </div>
-							</div>
-						</div>
+					<div class="item">
+						<img src="images/header/Akad_nikah.jpg" alt="Chicago" style="width:100%;">
+					</div>
+
+					<div class="item">
+						<img src="images/header/Buku_tahunan.jpg" alt="New york" style="width:100%;">
 					</div>
 				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 
-		</div>
-		
-		<div id="fh5co-tours" class="fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Cari Jasa Fotografer Berkualitas ?</h3>
-						<p>Hanya di Wdadadadadadl</p>
-					</div>
-				</div>
-	
-			<?php
-	$no = 1;
-	foreach($db->tampil_data() as $x){
-	?>
-					<div class="col-lg-4 col-md-4 col-sm-6">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive"  src="images/<?php echo $x['gambar']; ?>" alt="" ></a>
-							<div class="blog-text">
-								<div class="prod-title">
-									<h3><a href="#"><?php echo $x['nama']; ?></a></h3>
-								
-									<p><?php echo $x['konten']; ?></p>
-									<p><a  href="tampilWisata.php?id=<?php echo $x['id'] ?>">Learn More...</a></p>
-								</div>
-							</div> 
+			<div id="fh5co-tours" class="fh5co-section-gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+							<h3>Cari Jasa Fotografer Berkualitas ?</h3>
+							<p>Hanya di Wdadadadadadl</p>
 						</div>
 					</div>
-					<?php 
-	}
+
+					<?php
+					$no = 1;
+					foreach ($db->tampil_data() as $x) {
+					?>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="fh5co-blog animate-box">
+								<a href="#"><img class="img-responsive" src="images/<?php echo $x['gambar']; ?>" alt=""></a>
+								<div class="blog-text">
+									<div class="prod-title">
+										<h3><a href="#"><?php echo $x['nama']; ?></a></h3>
+
+										<p><?php echo $x['konten']; ?></p>
+										<p><a href="tampilWisata.php?id=<?php echo $x['id'] ?>">Learn More...</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					<?php
+					}
 
 
-	?>
-					
-					
+					?>
+
+
 					<div class="clearfix visible-md-block"></div>
 				</div>
 
@@ -156,10 +163,10 @@ $db= new wisata();
 			</div>
 		</div>
 		<!-- fh5co-blog-section -->
-		
-		
-<?php include("footer.php") ?>
-	
+
+
+		<?php include("footer.php") ?>
+
 
 	</div>
 	<!-- END fh5co-page -->
@@ -192,10 +199,13 @@ $db= new wisata();
 	<!-- CS Select -->
 	<script src="js/classie.js"></script>
 	<script src="js/selectFx.js"></script>
-	
+
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+	<script>
+		$('.carousel').carousel()
+	</script>
 
-	</body>
+</body>
+
 </html>
-
