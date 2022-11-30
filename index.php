@@ -69,12 +69,7 @@ $db = new wisata();
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-	<style type="text/css">
-		.style1 {
-			color: #FF5F00
-		}
-	</style>
+	<link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
@@ -101,10 +96,9 @@ $db = new wisata();
 					<div class="item active">
 						<img src="images/header/Prewedding.jpg" alt="Wedding" style="width:100%;">
 					</div>
-
 					<?php foreach ($db->tampil_header() as $val) { ?>
 						<div class="item">
-							<img src="images/header/<?= $val['image'] ?>" alt="<?= $val['nama']; ?>" style="width:100%;">
+							<img src="images/header/<?= $val['image'] ?>" alt="<?= $val['nama']; ?>">
 						</div>
 					<?php
 					}; ?>
