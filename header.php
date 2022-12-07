@@ -10,7 +10,7 @@
 				<ul class="sf-menu" id="fh5co-primary-menu">
 					<li><a href="index.php">Fotography</a></li>
 					<li>
-						<a href="paket.php" class="fh5co-sub-ddown">Videography</a>
+						<a href="videography.php" class="fh5co-sub-ddown">Videography</a>
 					</li>
 					<li><a href="index.php">About</a></li>
 					<li><a href="#">Package</a>
