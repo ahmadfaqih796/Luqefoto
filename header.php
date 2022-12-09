@@ -12,7 +12,7 @@
 					<li>
 						<a href="videography.php" class="fh5co-sub-ddown">Videography</a>
 					</li>
-					<li><a href="index.php">About</a></li>
+					<li><a href="about.php">About</a></li>
 					<li><a href="#">Package</a>
 						<ul class="fh5co-sub-menu">
 							<li><a href="#">Menu 1</a></li>
