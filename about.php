@@ -54,16 +54,19 @@
 <body>
 	<?php include("header.php"); ?>
 	<main class="konten">
-		<article>
-			<legend>About</legend>
-			<h1>Meet The Team</h1>
-			<p>We’re a group of passionate young people – photographers, videographers, designers, editors and stylists – working together to create beautiful masterpieces.</p>
-			<p>Every day we step into AXIOO house feeling inspired – ignited by
-				passion, fueled by laughter, challenged by creativity. We find ourselves fascinated by the love stories and mesmerized by the twinkle of an eye,
-				the sincerity of a smile and the miracle of a hug. It’s how we create pages
-				of captured moments.</p>
-			<p>We are in love with love and in constant affair with life. We love bold colors, Simpson clouds, bright lights and happy people. And this team here, this is our family. It’s where our paths cross professionally that touch our lives personally. It’s where freedom is encouraged and relationship is inspired. It’s where we feel at home.</p>
-		</article>
+		<header>
+			<article>
+				<legend>ABOUT</legend>
+				<h1>Meet The Team</h1>
+				<p>We’re a group of passionate young people – photographers, videographers, designers, editors and stylists – working together to create beautiful masterpieces.</p>
+				<p>Every day we step into AXIOO house feeling inspired – ignited by
+					passion, fueled by laughter, challenged by creativity. We find ourselves fascinated by the love stories and mesmerized by the twinkle of an eye,
+					the sincerity of a smile and the miracle of a hug. It’s how we create pages
+					of captured moments.</p>
+				<p>We are in love with love and in constant affair with life. We love bold colors, Simpson clouds, bright lights and happy people. And this team here, this is our family. It’s where our paths cross professionally that touch our lives personally. It’s where freedom is encouraged and relationship is inspired. It’s where we feel at home.</p>
+			</article>
+			<img src="images/saptra.png" alt="">
+		</header>
 	</main>
 </body>
 
