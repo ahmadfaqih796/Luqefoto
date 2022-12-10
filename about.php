@@ -65,8 +65,31 @@
 					of captured moments.</p>
 				<p>We are in love with love and in constant affair with life. We love bold colors, Simpson clouds, bright lights and happy people. And this team here, this is our family. It’s where our paths cross professionally that touch our lives personally. It’s where freedom is encouraged and relationship is inspired. It’s where we feel at home.</p>
 			</article>
-			<img src="images/saptra.png" alt="">
+			<img src="images/axioo.jpg" alt="">
 		</header>
+		<main class="crew">
+			<h1 class="judul-konten">Crew</h1>
+			<div class="flex">
+				<section class="gambar-crew">
+					<img src="https://picsum.photos/300/300" alt="">
+					<article>
+						<h1>Apri</h1>
+					</article>
+				</section>
+				<section class="gambar-crew">
+					<img src="https://picsum.photos/300/300" alt="">
+					<article>
+						<h1>Apri</h1>
+					</article>
+				</section>
+				<section class="gambar-crew">
+					<img src="https://picsum.photos/300/300" alt="">
+					<article>
+						<h1>Apri</h1>
+					</article>
+				</section>
+			</div>
+		</main>
 	</main>
 </body>
 

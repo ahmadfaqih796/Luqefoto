@@ -1,32 +1,94 @@
 .konten header {
   display: flex;
   justify-content: space-around;
-	height: 90vh;
-	align-items: center;
+  height: 90vh;
+  align-items: center;
 }
 .konten header article {
   width: 600px;
+  padding: 1rem;
 }
 .konten header article legend {
-	color: #aebfc2;
-	font-size: 20px;
-	font-weight: 700;
-	margin-bottom: -10px;
-	border: none;
+  color: #aebfc2;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: -10px;
+  border: none;
 }
 .konten header article h1 {
-	margin: 0;
-	font-size: 48px;
-	font-family: 'Times New Roman', Times, serif;
-	margin-bottom: 50px;
+  margin: 0;
+  font-size: 48px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 50px;
 }
 .konten header article p {
-	font-family: serif;
-	color: black;
-	font-size: 17px;
-	text-align: justify;
+  font-family: serif;
+  color: black;
+  font-size: 17px;
+  text-align: justify;
 }
 .konten header img {
-	width: 400px;
-  box-shadow: 0px 0px 30px 10px white;
+  width: 500px;
+  /* box-shadow: 0px 0px 30px 10px white; */
+}
+
+.judul-konten {
+  text-align: center;
+  font-size: 48px;
+}
+
+.judul-konten:before,
+.judul-konten:after {
+  display: inline-flex;
+  content: "";
+  background-image: url("../images/line-white.jpg");
+  background-size: 200px 40px;
+  height: 40px;
+  width: 200px;
+  margin: 20px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+}
+/* foto */
+.gambar-crew {
+  width: 300px;
+  height: 400px;
+}
+.gambar-crew article {
+  border: 3px solid #aebfc2;
+  text-align: center;
+  width: 250px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin: -50px auto 0 auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: 100px;
+  box-shadow: 0px 0px 10px 10px blanchedalmond;
+}
+.gambar-crew h1 {
+  text-align: center;
+}
+
+.judul-konten:after {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+@media screen and (max-width: 950px) {
+  .konten header {
+    height: fit-content;
+  }
+  .konten header img {
+    display: none;
+  }
+  .judul-konten:before,
+  .judul-konten:after {
+    display: none;
+  }
 }
