@@ -73,9 +73,26 @@
   background-color: white;
   height: 100px;
   box-shadow: 0px 0px 10px 10px blanchedalmond;
+  transition: all 1s;
 }
-.gambar-crew h1 {
+.gambar-crew article:hover {
+  margin-top: -100px;
+	height: 150px;
+}
+.gambar-crew article p {
+	opacity: 0;
+}
+.gambar-crew article:hover p {
+	opacity: 1;
+	transition: all 1s;
+}
+.gambar-crew h3 {
   text-align: center;
+}
+.gambar-crew a {
+  text-decoration: none;
+  color: #899799;
+  font-size: 16px;
 }
 .nama-crew {
   width: 300px;
@@ -84,7 +101,7 @@
   text-decoration: none;
   font-weight: 500;
   color: black;
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 .judul-konten:after {

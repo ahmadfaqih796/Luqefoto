@@ -48,6 +48,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/8484f65b47.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/header.css">
 </head>
 
@@ -75,8 +76,12 @@
 					<section class="gambar-crew">
 						<img src="https://picsum.photos/300/300" alt="">
 						<article>
-							<h1 id="apri">Apri</h1>
-							
+							<h3 id="apri">Apriyanto</h3>
+							<a href="#">
+								<i class="fa-brands fa-instagram"></i>
+								Apri
+							</a>
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 						</article>
 					</section>
 					<section class="gambar-crew">
