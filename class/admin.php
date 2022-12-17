@@ -10,7 +10,7 @@ class admin extends database{
 				$this->getConnection();
 			}
 
-			public function login_admin($username,$password,$level){
+			public function login_admin($username,$password){
 				
 				$sql = "SELECT * from tbl_admin
 						WHERE user_admin = '$username' AND pass_admin = '$password' ";
