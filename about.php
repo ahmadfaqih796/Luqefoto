@@ -67,29 +67,37 @@
 			</article>
 			<img src="images/axioo.jpg" alt="">
 		</header>
-		<main class="crew">
-			<h1 class="judul-konten">Crew</h1>
-			<div class="flex">
-				<section class="gambar-crew">
-					<img src="https://picsum.photos/300/300" alt="">
-					<article>
-						<h1>Apri</h1>
-					</article>
-				</section>
-				<section class="gambar-crew">
-					<img src="https://picsum.photos/300/300" alt="">
-					<article>
-						<h1>Apri</h1>
-					</article>
-				</section>
-				<section class="gambar-crew">
-					<img src="https://picsum.photos/300/300" alt="">
-					<article>
-						<h1>Apri</h1>
-					</article>
-				</section>
-			</div>
-		</main>
+		<div class="flex" style="justify-content: space-between;">
+
+			<main class="crew">
+				<h1 class="judul-konten">Crew</h1>
+				<div class="flex" style="flex-wrap: wrap;">
+					<section class="gambar-crew">
+						<img src="https://picsum.photos/300/300" alt="">
+						<article>
+							<h1 id="apri">Apri</h1>
+							
+						</article>
+					</section>
+					<section class="gambar-crew">
+						<img src="https://picsum.photos/300/300" alt="">
+						<article>
+							<h1 id="samuel">Samuel</h1>
+						</article>
+					</section>
+					<section class="gambar-crew">
+						<img src="https://picsum.photos/300/300" alt="">
+						<article>
+							<h1>Daniel</h1>
+						</article>
+					</section>
+				</div>
+			</main>
+			<main class="nama-crew">
+				<h1>Who We Are</h1>
+				<a href="#apri">Apri</a>
+			</main>
+		</div>
 	</main>
 </body>
 

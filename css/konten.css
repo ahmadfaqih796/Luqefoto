@@ -51,7 +51,9 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-
+}
+.crew {
+  width: 100%;
 }
 /* foto */
 .gambar-crew {
@@ -75,6 +77,15 @@
 .gambar-crew h1 {
   text-align: center;
 }
+.nama-crew {
+  width: 300px;
+}
+.nama-crew a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+	font-size: 2rem;
+}
 
 .judul-konten:after {
   -webkit-transform: scaleX(-1);
@@ -84,11 +95,10 @@
   .konten header {
     height: fit-content;
   }
-  .konten header img {
-    display: none;
-  }
+  .konten header img,
   .judul-konten:before,
-  .judul-konten:after {
+  .judul-konten:after,
+  .nama-crew {
     display: none;
   }
 }
