@@ -120,7 +120,7 @@ $db = new wisata();
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 							<h3>Cari Jasa Fotografer Berkualitas ?</h3>
-							<p>Hanya di Wdadadadadadl</p>
+							<p>Hanya di LUQEFOTO</p>
 						</div>
 					</div>
 
