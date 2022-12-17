@@ -81,19 +81,29 @@
 								<i class="fa-brands fa-instagram"></i>
 								Apri
 							</a>
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+							<p>Apri dreams to keep the moments through her photographs.</p>
 						</article>
 					</section>
 					<section class="gambar-crew">
 						<img src="https://picsum.photos/300/300" alt="">
 						<article>
-							<h1 id="samuel">Samuel</h1>
+							<h3 id="apri">Apriyanto</h3>
+							<a href="#">
+								<i class="fa-brands fa-instagram"></i>
+								Apri
+							</a>
+							<p>Apri dreams to keep the moments through her photographs.</p>
 						</article>
 					</section>
 					<section class="gambar-crew">
 						<img src="https://picsum.photos/300/300" alt="">
 						<article>
-							<h1>Daniel</h1>
+							<h3 id="apri">Apriyanto</h3>
+							<a href="#">
+								<i class="fa-brands fa-instagram"></i>
+								Apri
+							</a>
+							<p>Apri dreams to keep the moments through her photographs.</p>
 						</article>
 					</section>
 				</div>
