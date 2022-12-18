@@ -1,10 +1,12 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Wede Official</title>
@@ -13,7 +15,7 @@
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-  <!-- 
+	<!-- 
 	//////////////////////////////////////////////////////
 
 	FREE HTML5 TEMPLATE 
@@ -27,12 +29,12 @@
 	//////////////////////////////////////////////////////
 	 -->
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
@@ -42,7 +44,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -58,7 +60,7 @@
 	<!-- CS Select -->
 	<link rel="stylesheet" href="css/cs-select.css">
 	<link rel="stylesheet" href="css/cs-skin-border.css">
-	
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -69,115 +71,115 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body>
-		<div id="fh5co-wrapper">
+</head>
+
+<body>
+	<div id="fh5co-wrapper">
 		<div id="fh5co-page">
 
-		<?php include("header.php") ?>
+			<?php include("header.php") ?>
 
-		<!-- end:header-top -->
-	
-		
-		
-		<div id="fh5co-tours" class="fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Order List</h3>
-						<h2>Pembayaran Melalui Rek Danamon Atas Wede Official</h2>
-						<h2>No Rek : 123456789</h2>
-						<p>Lengkapi Form Berikut</p>
+			<!-- end:header-top -->
+
+
+
+			<div id="fh5co-tours" class="fh5co-section-gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+							<h3>Order List</h3>
+							<h2>Pembayaran Melalui Rek Danamon Atas Wede Official</h2>
+							<h2>No Rek : 123456789</h2>
+							<p>Lengkapi Form Berikut</p>
+						</div>
 					</div>
-				</div>
 
 
 
 					<div class="row animate-box">
-						 <div class="container grid">
-		<div class="row">
-		<div class="table-responsive">
-				<table class="table table-bordered table-striped table-hover">
-                	<thead>
-                    	<tr class="info fg-white">
-                        	<th class="text-left">ID Pesan</th>
-                            <th class="text-left">Tanggal Pesan</th>
-                            <th class="text-left">Tanggal Foto</th>
-                            <th class="text-left">Paket </th>
-                            <th class="text-left"> Studio</th>
-                            <th class="text-left">Transport</th>
-                            <th class="text-left">Harga Paket</th>
-                            <th class="text-left">Harga Studio</th>
-                            <th class="text-left">Harga Total</th>
-                            <th class="text-left">Aksi</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                    <?php
+						<div class="container grid">
+							<div class="row">
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped table-hover">
+										<thead>
+											<tr class="info fg-white">
+												<th class="text-left">ID Pesan</th>
+												<th class="text-left">Tanggal Pesan</th>
+												<th class="text-left">Tanggal Foto</th>
+												<th class="text-left">Paket </th>
+												<th class="text-left"> Studio</th>
+												<th class="text-left">Transport</th>
+												<th class="text-left">Harga Paket</th>
+												<th class="text-left">Harga Studio</th>
+												<th class="text-left">Harga Total</th>
+												<th class="text-left">Aksi</th>
+											</tr>
+										</thead>
 
-                 $id_user=$_SESSION['id_user'];
-                          $_mysqli = new mysqli("localhost","root","","travel");
-						$comot=$_mysqli->query("select *from tbl_pesan,tbl_user,tbl_daerah,tbl_paket,tbl_hotel where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_pesan.id_hotel=tbl_hotel.id_hotel and tbl_pesan.id_daerah=tbl_daerah.id_daerah and tbl_user.id_user='$id_user'");
-						
-						while($isi_tbl=mysqli_fetch_array($comot))
-						{
-						$total_harga	=$isi_tbl['harga_paket']+$isi_tbl['biaya']+$isi_tbl['harga'];
-						if($isi_tbl['status']=='S2'){
-							$txtS="Telah malakukan pembayaran";
-						}else if($isi_tbl['status']=='S3'){
-							$txtS="Melakukan pembayaran di tempat";
-						}
-					?>
-                    	<tr>
-                        	<td>BT-00<?php echo $isi_tbl['id_pesan']; ?></td>
-                            <td><?php echo $isi_tbl['tgl_pesan']; ?></td>
-                            <td><?php echo $isi_tbl['tgl_tour']; ?></td>
-                            <td><?php echo $isi_tbl['nama_paket']; ?></td>
-                            <td><?php echo $isi_tbl['hotel']; ?></td>
-                                <td><?php echo $isi_tbl['biaya']; ?> IDR</td>
-                            <td><?php echo $isi_tbl['harga_paket']; ?> IDR</td>
-                            <td><?php echo $isi_tbl['harga']; ?> IDR</td>
-                            <td><?php echo $total_harga; ?> IDR</td>
-                            <td><?php
-								$now= date("Y-m-d");
-								if($isi_tbl['status']=='S2'&&$isi_tbl['tgl_tour']>=$now||$isi_tbl['status']=='S3'&&$isi_tbl['tgl_tour']>=$now){
-								?>
-								<a class="btn btn-success" href="orderfinish.php?id=<?php echo $isi_tbl[0]; ?>" data-hint="<?php echo $txtS ?>">Cetak Tiket</a>
-								<?php
-								}else if($isi_tbl['status']=='S4'){
-									echo "Telah Tour";
-								}else if($isi_tbl['tgl_tour']<$now){
-									echo "<a class='text-warning'><b>Expired!!</b></a>";
-								}else{
-									echo "<b>Waitting..<b>";
-								?>
-									<br /><a class="btn btn-warning" href="uploadbukti.php?id=<?php echo $isi_tbl[0]; ?>" data-hint="Upload Bukti Pembayaran">Upload Bukti</a>
-								<?php
-								}
-								?>
-								</td>
-                        </tr>
-                    <?php
-						}
-					?>
-                    </tbody>
-                    
-                </table>
-                </div>
-		</div>
-    </div>
-		</div>
+										<tbody>
+											<?php
+
+											$id_user = $_SESSION['id_user'];
+											$_mysqli = new mysqli("localhost", "root", "", "photography");
+											$comot = $_mysqli->query("select *from tbl_pesan,tbl_user,tbl_daerah,tbl_paket,tbl_hotel where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_pesan.id_hotel=tbl_hotel.id_hotel and tbl_pesan.id_daerah=tbl_daerah.id_daerah and tbl_user.id_user='$id_user'");
+
+											while ($isi_tbl = mysqli_fetch_array($comot)) {
+												$total_harga	= $isi_tbl['harga_paket'] + $isi_tbl['biaya'] + $isi_tbl['harga'];
+												if ($isi_tbl['status'] == 'S2') {
+													$txtS = "Telah malakukan pembayaran";
+												} else if ($isi_tbl['status'] == 'S3') {
+													$txtS = "Melakukan pembayaran di tempat";
+												}
+											?>
+												<tr>
+													<td>BT-00<?php echo $isi_tbl['id_pesan']; ?></td>
+													<td><?php echo $isi_tbl['tgl_pesan']; ?></td>
+													<td><?php echo $isi_tbl['tgl_tour']; ?></td>
+													<td><?php echo $isi_tbl['nama_paket']; ?></td>
+													<td><?php echo $isi_tbl['hotel']; ?></td>
+													<td><?php echo $isi_tbl['biaya']; ?> IDR</td>
+													<td><?php echo $isi_tbl['harga_paket']; ?> IDR</td>
+													<td><?php echo $isi_tbl['harga']; ?> IDR</td>
+													<td><?php echo $total_harga; ?> IDR</td>
+													<td><?php
+															$now = date("Y-m-d");
+															if ($isi_tbl['status'] == 'S2' && $isi_tbl['tgl_tour'] >= $now || $isi_tbl['status'] == 'S3' && $isi_tbl['tgl_tour'] >= $now) {
+															?>
+															<a class="btn btn-success" href="orderfinish.php?id=<?php echo $isi_tbl[0]; ?>" data-hint="<?php echo $txtS ?>">Cetak Tiket</a>
+														<?php
+															} else if ($isi_tbl['status'] == 'S4') {
+																echo "Telah Tour";
+															} else if ($isi_tbl['tgl_tour'] < $now) {
+																echo "<a class='text-warning'><b>Expired!!</b></a>";
+															} else {
+																echo "<b>Waitting..<b>";
+														?>
+															<br /><a class="btn btn-warning" href="uploadbukti.php?id=<?php echo $isi_tbl[0]; ?>" data-hint="Upload Bukti Pembayaran">Upload Bukti</a>
+														<?php
+															}
+														?>
+													</td>
+												</tr>
+											<?php
+											}
+											?>
+										</tbody>
+
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- fh5co-blog-section -->
+
+			<?php include("footer.php") ?>
+
+
+
 		</div>
-		<!-- fh5co-blog-section -->
-		
-	<?php include("footer.php") ?>
-
-	
-
-	</div>
-	<!-- END fh5co-page -->
+		<!-- END fh5co-page -->
 
 	</div>
 	<!-- END fh5co-wrapper -->
@@ -207,10 +209,10 @@
 	<!-- CS Select -->
 	<script src="js/classie.js"></script>
 	<script src="js/selectFx.js"></script>
-	
+
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 
-	</body>
-</html>
+</body>
 
+</html>

@@ -86,7 +86,7 @@
 			$login = $user->cek_login($_POST['username'],$_POST['password']);
 
 			if ($login) {
-			header("location:profil.php");
+			header("location:order.php");
 		}
 			else
 			{
@@ -114,7 +114,7 @@
 									 <form name="formLogin" method="post" action="login.php">
 									 <div role="tabpanel" class="tab-pane" id="flights">
 										<div class="row">
-										<h1 align="center">Login Ke sdsfsfsl</h1>
+										<h1 align="center">Login</h1>
 											<h1><?php  if(isset($_GET['status'])){ echo "&laquo; ".$_GET['status']." &raquo;"; }?></h1>
 											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
@@ -145,7 +145,7 @@
 									
 									
 									 <center>
-								  <span class="price style1">Hanya Di adaafafafa
+								  <span class="price style1">LUQEFOTO
 						                    </center>
 									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
 								</div>
