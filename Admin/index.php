@@ -22,9 +22,9 @@
 
 				if ($login) {
 					if ($_SESSION['level'] == "1") {
-						header("location: /admin/admin.php");
+						header("location: admin.php");
 					} else if ($_SESSION['level'] == "2") {
-						header("location: /admin/operator.php");
+						header("location: operator.php");
 					}
 				} else {
 			?>
