@@ -84,13 +84,11 @@ $pw = new combo();
 		<div id="fh5co-page">
 			<?php include("header.php");
 			$user = "$_SESSION[id_user]";
-			if(!$user){
+			if (!$user) {
 				header("location:login.php");
 			}
 			?>
-
 			<!-- end:header-top -->
-
 			<div class="fh5co-hero">
 				<div class="fh5co"></div>
 				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/studio2.jpg);">
@@ -99,20 +97,14 @@ $pw = new combo();
 							<div class="row">
 								<div class="col-sm-5 col-md-5">
 									<div class="tabulation animate-box">
-
 										<!-- Nav tabs -->
-
-
 										<!-- Tab panes -->
-
-
 									</div>
 								</div>
 								<div class="desc2 animate-box">
 									<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-
-										<h2 align="center">WADADe OADADAD</h2>
-										<h3 align="center">Untuk Hasil PemoADADADl</h3>
+										<h2 align="center">LUQEFOTO</h2>
+										<h3 align="center">Untuk hasil foto yang luar biasa</h3>
 										<span class="price ">
 											<center>Harga Bersahabat</center>
 										</span>
@@ -123,7 +115,6 @@ $pw = new combo();
 						</div>
 					</div>
 				</div>
-
 			</div>
 
 			<div id="fh5co-tours" class="fh5co-section-gray">
@@ -136,8 +127,6 @@ $pw = new combo();
 					</div>
 
 					<form action="proses.php?aksi=tambah_order" method="post" enctype="multipart/form-data">
-
-
 						<div class="row animate-box">
 							<div class="col-md-6">
 								<h3 class="section-title">Ketentuan Pembookingan</h3>
@@ -149,13 +138,11 @@ $pw = new combo();
 										pemotretan yang telah di booking. Biaya yang telah ditranfer
 										akan dikembalikan dengan potongan 10% dari total biaya dan harus
 										melakukan konfirmasi terlebih dahulu melalui contact person kami.</li>
-
 								</ul><br>
-
 							</div>
+
 							<div class="col-md-6">
 								<div class="row">
-
 									<div class="col-md-6">
 										<label>Nama</label>
 										<div class="form-group">
@@ -177,34 +164,6 @@ $pw = new combo();
 											</select>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<label>Pilih Studio</label>
-										<div class="form-group">
-											<select name="id_hotel" class="form-control">
-												<option value="">--Pilih Studio-</option>
-												<?php
-												$a = 1;
-												foreach ($pw->tampil_hotel() as $x) : $a++ ?>
-													<option value=<?php echo $x['id_hotel'] ?>><?php echo $x['hotel'] ?>
-													</option>
-												<?php endforeach; ?>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<label>Asal Daerah Client</label>
-										<div class="form-group">
-											<select name="id_daerah" class="form-control">
-												<option value="">--Pilih Daerah-</option>
-												<?php
-												$a = 1;
-												foreach ($pw->tampil_daerah() as $x) : $a++ ?>
-													<option value=<?php echo $x['id_daerah'] ?>><?php echo $x['nama_daerah'] ?>
-													</option>
-												<?php endforeach; ?>
-											</select>
-										</div>
-									</div>
 
 									<div class="col-md-6">
 										<div class="input-field">
@@ -216,18 +175,10 @@ $pw = new combo();
 									<div class="col-md-6">
 										<label>Tgl Pemesanan</label>
 										<div class="form-group">
-
 											<input type="date" name="tgl_pesan" class="form-control" value="<?php echo date('Y-m-d'); ?>" readonly>
 										</div>
 									</div>
 
-
-									<div class="col-md-12">
-										<label></label>
-										<div class="form-group">
-
-										</div>
-									</div>
 									<div class="col-md-12">
 										<div class="form-group">
 											<input type="submit" value="Lanjut" class="btn btn-primary">
