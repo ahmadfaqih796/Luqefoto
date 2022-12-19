@@ -166,6 +166,35 @@ $pw = new combo();
 									</div>
 
 									<div class="col-md-6">
+										<label>Pilih Studio</label>
+										<div class="form-group">
+											<select name="id_hotel" class="form-control">
+												<option value="">--Pilih Studio-</option>
+												<?php
+												$a = 1;
+												foreach ($pw->tampil_hotel() as $x) : $a++ ?>
+													<option value=<?php echo $x['id_hotel'] ?>><?php echo $x['hotel'] ?>
+													</option>
+												<?php endforeach; ?>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<label>Asal Daerah Client</label>
+										<div class="form-group">
+											<select name="id_daerah" class="form-control">
+												<option value="">--Pilih Daerah-</option>
+												<?php
+												$a = 1;
+												foreach ($pw->tampil_daerah() as $x) : $a++ ?>
+													<option value=<?php echo $x['id_daerah'] ?>><?php echo $x['nama_daerah'] ?>
+													</option>
+												<?php endforeach; ?>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-6">
 										<div class="input-field">
 											<label for="date-start">Tgl Pemotretan</label>
 											<input type="text" class="form-control" id="date-start" name="tgl_tour" />
