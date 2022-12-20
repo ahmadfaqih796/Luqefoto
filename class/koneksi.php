@@ -5,7 +5,7 @@ class database{
 	public $_host = "localhost";
 		public $_username = "root";
 		public $_password = "";
-		public $_database = "photography";
+		public $_database = "luqefoto";
 		public $_connection;
 
 	

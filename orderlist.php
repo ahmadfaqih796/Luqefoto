@@ -107,11 +107,7 @@
 												<th class="text-left">Tanggal Pesan</th>
 												<th class="text-left">Tanggal Foto</th>
 												<th class="text-left">Paket </th>
-												<th class="text-left"> Studio</th>
-												<th class="text-left">Transport</th>
 												<th class="text-left">Harga Paket</th>
-												<th class="text-left">Harga Studio</th>
-												<th class="text-left">Harga Total</th>
 												<th class="text-left">Aksi</th>
 											</tr>
 										</thead>
@@ -120,11 +116,10 @@
 											<?php
 
 											$id_user = $_SESSION['id_user'];
-											$_mysqli = new mysqli("localhost", "root", "", "photography");
-											$comot = $_mysqli->query("select *from tbl_pesan,tbl_user,tbl_daerah,tbl_paket,tbl_hotel where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_pesan.id_hotel=tbl_hotel.id_hotel and tbl_pesan.id_daerah=tbl_daerah.id_daerah and tbl_user.id_user='$id_user'");
+											$_mysqli = new mysqli("localhost", "root", "", "luqefoto");
+											$comot = $_mysqli->query("select *from tbl_pesan,tbl_user,tbl_paket where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_user.id_user='$id_user'");
 
 											while ($isi_tbl = mysqli_fetch_array($comot)) {
-												$total_harga	= $isi_tbl['harga_paket'] + $isi_tbl['biaya'] + $isi_tbl['harga'];
 												if ($isi_tbl['status'] == 'S2') {
 													$txtS = "Telah malakukan pembayaran";
 												} else if ($isi_tbl['status'] == 'S3') {
@@ -136,11 +131,7 @@
 													<td><?php echo $isi_tbl['tgl_pesan']; ?></td>
 													<td><?php echo $isi_tbl['tgl_tour']; ?></td>
 													<td><?php echo $isi_tbl['nama_paket']; ?></td>
-													<td><?php echo $isi_tbl['hotel']; ?></td>
-													<td><?php echo $isi_tbl['biaya']; ?> IDR</td>
 													<td><?php echo $isi_tbl['harga_paket']; ?> IDR</td>
-													<td><?php echo $isi_tbl['harga']; ?> IDR</td>
-													<td><?php echo $total_harga; ?> IDR</td>
 													<td><?php
 															$now = date("Y-m-d");
 															if ($isi_tbl['status'] == 'S2' && $isi_tbl['tgl_tour'] >= $now || $isi_tbl['status'] == 'S3' && $isi_tbl['tgl_tour'] >= $now) {

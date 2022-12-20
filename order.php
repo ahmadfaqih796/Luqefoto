@@ -170,12 +170,8 @@ $pw = new combo();
 										<div class="form-group">
 											<select name="id_hotel" class="form-control">
 												<option value="">--Pilih Studio-</option>
-												<?php
-												$a = 1;
-												foreach ($pw->tampil_hotel() as $x) : $a++ ?>
-													<option value=<?php echo $x['id_hotel'] ?>><?php echo $x['hotel'] ?>
-													</option>
-												<?php endforeach; ?>
+												<option value="2">haha</option>
+												<option value="3">ler-</option>
 											</select>
 										</div>
 									</div>
@@ -184,12 +180,8 @@ $pw = new combo();
 										<div class="form-group">
 											<select name="id_daerah" class="form-control">
 												<option value="">--Pilih Daerah-</option>
-												<?php
-												$a = 1;
-												foreach ($pw->tampil_daerah() as $x) : $a++ ?>
-													<option value=<?php echo $x['id_daerah'] ?>><?php echo $x['nama_daerah'] ?>
-													</option>
-												<?php endforeach; ?>
+												<option value="1">1</option>
+												<option value="2">2</option>
 											</select>
 										</div>
 									</div>
