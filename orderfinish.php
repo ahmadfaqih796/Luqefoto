@@ -1,103 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php
 session_start();
-
-if (isset($_SESSION['id_user'])) {
-	echo $_SESSION['id_user'];
-	//koneksi terpusat
-
-	$_mysqli = new mysqli("localhost", "root", "", "luqefoto");
-
-	// get the HTML
-	ob_start();
-	$comot = $_mysqli->query("SELECT * FROM tbl_pesan, tbl_paket, tbl_user WHERE tbl_pesan.id_user=tbl_user.id_user AND
-						tbl_pesan.id_paket=tbl_paket.id_paket AND id_pesan=" . $_SESSION['id_user']);
-	$isi_tbl = mysqli_fetch_array($comot);
-	$num = 'BT00' . $isi_tbl['id_pesan'] . ' - (' . $isi_tbl['tgl_pesan'] . ')';
-	$nom = $isi_tbl['nama_user'];
-	$date = date("d M Y");
+$peserta = $_SESSION['id_user'];
+echo $peserta;
+if (isset($peserta)) {
+	$koneksi = new mysqli("localhost", "root", "", "luqefoto");
+	$tampil_sertifikat = mysqli_query(
+		$koneksi,
+		"SELECT * from tbl_pesan, tbl_paket, tbl_user 
+		WHERE tbl_pesan.id_user=tbl_user.id_user 
+		AND tbl_pesan.id_paket=tbl_paket.id_paket 
+		AND id_pesan=" . $_SESSION['id_user']
+	);
+	$data = mysqli_fetch_array($tampil_sertifikat);
 ?>
-	<style type="text/css">
-		div.zone {
-			border: none;
-			border-radius: 6mm;
-			background: #FFFFFF;
-			border-collapse: collapse;
-			padding: 3mm;
-			font-size: 2.7mm;
-		}
 
-		h1 {
-			padding: 0;
-			margin: 0;
-			color: #DD0000;
-			font-size: 7mm;
-		}
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,maximum-scale=1.0">
+		<?php echo "<title>LUQEFOTO_" . $data['id_user'] . "_" . $data['tgl_pesan'] . "</title>" ?>
+		<link rel="stylesheet" href="css/tiket.css">
+		<style type="text/css" media="print">
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
 
-		h2 {
-			padding: 0;
-			margin: 0;
-			color: #222222;
-			font-size: 5mm;
-			position: relative;
-		}
-	</style>
-	<page format="105x200" orientation="L" backcolor=" #800000 " style="font: arial;">
-		<div style="rotate: 90; position: absolute; width: 100mm; height: 4mm; left: 195mm; top: 0; font-style: italic; font-weight: normal; text-align: center; font-size: 2.5mm;">
+			body {
+				background-image: none;
+			}
 
-	</div>
-	<table style="width: 99%;border: none;" cellspacing="4mm" cellpadding="0">
-		<tr>
-			<td colspan="2" style="width: 100%">
-				<div class="zone" style="height: 34mm;position: relative;font-size: 5mm;">
-					<div style="position: absolute; right: 3mm; top: 3mm; text-align: right; font-size: 4mm; ">
-						<b><?php echo $nom; ?></b><br>
-					</div>
-					<div style="position: absolute; right: 3mm; bottom: 3mm; text-align: right; font-size: 4mm; ">
-						Jenis Paket : <b><?php echo $isi_tbl['nama_paket']; ?></b><br>
-						Total Biaya : <b><?php echo $total_harga; ?> IDR</b><br>
-						Code Booking : <b><?php echo $num; ?></b><br>
-						Tanggal Pemotretan: <b><?php echo $isi_tbl['tgl_tour']; ?></b><br>
-					</div>
-					<img src="images/be.png" width="100" height="99" />
-					<span style="position: absolute; left: 32mm; top: 10mm; font-size: 28px; color: red">WeAADADl </span><br />
-					<span style="position: absolute; left: 32mm; top: 18mm; font-size: 16px;">Tiket Pemotretan, <?php echo $date; ?></span>
+			.teks {
+				position: absolute;
+				top: 32.5%;
+				width: 28.6cm;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				left: 0.6cm;
+			}
 
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 25%;">
-				<div class="zone" style="height: 40mm;vertical-align: middle;text-align: center;">
-					<qrcode value="<?php echo $num . "\n" . $nom . "\n" . $date; ?>" ec="Q" style="width: 37mm; border: none;"></qrcode>
-				</div>
-			</td>
-			<td style="width: 75%">
-				<div class="zone" style="height: 40mm;vertical-align: middle; text-align: justify">
-					<b>Ketentuan :</b><br>
-					1. Perubahan Peket pemotretan silahkan hubungi contact person kami yang ada pada website, dan hanya bisa dilakukan 5 hari sebelum hari pemotretan. Kurang dari itu perubahan tidak bisa dilakukan.<br>
-					2. Pembatalan booking dapat dilakukan 7 hari sebelum tanggal pemotretan yang telah di booking. Biaya yang telah ditranfer akan dikembalikan dengan potongan 10% dari total biaya dan harus melakukan konfirmasi terlebih dahulu melalui contact person kami.<br>
+			h3 {
+				width: 100%;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 24pt;
+				position: absolute;
+				color: #ffffff;
+				top: 4.2%;
+			}
 
-				</div>
-			</td>
-		</tr>
-	</table>
-	</page>
+			p {
+				width: 100%;
+				font-family: 'sertifikat';
+				color: #000;
+				font-weight: 700;
+				font-size: 50pt;
+				letter-spacing: 1px;
+				text-align: center;
+			}
+
+			@font-face {
+				font-family: sertifikat;
+				src: url("AdineKirnberg-Alternate.ttf");
+			}
+
+			img {
+				display: block;
+				width: 29.7cm;
+				height: 19cm;
+			}
+
+			a,
+			.pesan {
+				display: none;
+			}
+
+			@media print {
+				@page {
+					size: A4 landscape;
+					margin: 1cm;
+					width: 29.7cm;
+					height: 21cm;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<page>
+			<!-- <img src="../../assets/gambar/sertifikat/Workshop Hack the Game.jpg" alt=""> -->
+
+			<h3><?= $data['nama_user'] ?></h3>
+		</page>
+		<div class="pesan">
+			<h2>Gunakan Web Browser Firefox atau Chrome, ukuran kertas A4 dengan orientasi Landscape untuk cetak atau juga
+				bisa simpan dengan format PDF dan jika nama tidak muncul di menu print maka tekan cancel lalu pilih cetak
+				kembali</h2>
+			<a href="javascript:window.print();">Cetak</a>
+		</div>
+	</body>
 <?php
-	$content = ob_get_clean();
-
-	// convert
-	require_once(dirname(__FILE__) . './html2pdf/html2pdf.class.php');
-	try {
-		$html2pdf = new HTML2PDF('P', 'A4', 'fr', true, 'UTF-8', 0);
-		$html2pdf->pdf->SetDisplayMode('fullpage');
-		$html2pdf->writeHTML($content, isset($_GET['vuehtml']));
-		$html2pdf->Output('ticket00' . $isi_tbl['id_pesan'] . '-' . date('Y/m/d') . '.pdf');
-	} catch (HTML2PDF_exception $e) {
-		echo $e;
-		exit;
-	}
-} else {
-	session_destroy();
-	header('Location:formRegistrasi.php?status=Silahkan Login');
 }
 ?>
+
+</html>
