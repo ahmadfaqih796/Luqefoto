@@ -3,6 +3,9 @@
 <?php
 session_start();
 $peserta = $_SESSION['id_user'];
+if(!$peserta){
+	header("location:login.php");
+}
 echo $peserta;
 if (isset($peserta)) {
 	$koneksi = new mysqli("localhost", "root", "", "luqefoto");
