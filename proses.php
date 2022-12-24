@@ -24,7 +24,7 @@ $aksi = $_GET['aksi'];
  }
 
  elseif($aksi == "tambah_order"){
-$db->order($_POST['id_user'],$_POST['id_paket'],$_POST['id_hotel'],$_POST['id_daerah'],$_POST['tgl_pesan'],$_POST['tgl_tour']);
+$db->order($_POST['id_user'],$_POST['id_paket'],$_POST['tgl_pesan'],$_POST['tgl_tour']);
  	
  	header("location:orderlist.php");
  }

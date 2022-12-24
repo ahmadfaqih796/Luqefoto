@@ -152,27 +152,6 @@ $pw = new combo();
 									</div>
 
 									<div class="col-md-6">
-										<label>Pilih Studio</label>
-										<div class="form-group">
-											<select name="id_hotel" class="form-control">
-												<option value="">--Pilih Studio-</option>
-												<option value="2">haha</option>
-												<option value="3">ler-</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<label>Asal Daerah Client</label>
-										<div class="form-group">
-											<select name="id_daerah" class="form-control">
-												<option value="">--Pilih Daerah-</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-											</select>
-										</div>
-									</div>
-
-									<div class="col-md-6">
 										<div class="input-field">
 											<label for="date-start">Tgl Pemotretan</label>
 											<input type="text" class="form-control" id="date-start" name="tgl_tour" />

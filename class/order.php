@@ -34,7 +34,7 @@ $sql = "DELETE from tbl_pesan where id_pesan='$id_pesan'";
 
 
 	function tampil_data(){
-		$sql = "select*from tbl_pesan,tbl_user,tbl_daerah,tbl_paket,tbl_hotel where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_pesan.id_hotel=tbl_hotel.id_hotel and tbl_pesan.id_daerah=tbl_daerah.id_daerah ";
+		$sql = "select*from tbl_pesan,tbl_user,tbl_paket where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket ";
 				$result = mysqli_query($this->getConnection(),$sql);
 				while ($row = mysqli_fetch_array($result)) {
 					$hasil[] = $row;
