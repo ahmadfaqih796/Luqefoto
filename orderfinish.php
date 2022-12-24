@@ -8,13 +8,14 @@ if(!$peserta){
 }
 echo $peserta;
 if (isset($peserta)) {
+	echo $_GET['id'];
 	$koneksi = new mysqli("localhost", "root", "", "luqefoto");
 	$tampil_sertifikat = mysqli_query(
 		$koneksi,
 		"SELECT * from tbl_pesan, tbl_paket, tbl_user 
 		WHERE tbl_pesan.id_user=tbl_user.id_user 
 		AND tbl_pesan.id_paket=tbl_paket.id_paket 
-		AND id_pesan=" . $_SESSION['id_user']
+		AND id_pesan=" . $_GET['id']
 	);
 	$data = mysqli_fetch_array($tampil_sertifikat);
 ?>
@@ -51,7 +52,9 @@ if (isset($peserta)) {
 				font-size: 24pt;
 				position: absolute;
 				color: #ffffff;
-				top: 4.2%;
+			}
+			h3.text-pesan {
+				top: 6%;
 			}
 
 			p {
@@ -96,6 +99,7 @@ if (isset($peserta)) {
 			<!-- <img src="../../assets/gambar/sertifikat/Workshop Hack the Game.jpg" alt=""> -->
 
 			<h3><?= $data['nama_user'] ?></h3>
+			<h3 class="text-pesan"><?= $data['tgl_pesan'] ?></h3>
 		</page>
 		<div class="pesan">
 			<h2>Gunakan Web Browser Firefox atau Chrome, ukuran kertas A4 dengan orientasi Landscape untuk cetak atau juga
