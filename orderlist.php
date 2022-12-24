@@ -15,20 +15,6 @@
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-	<!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
 	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="" />
 	<meta property="og:image" content="" />
@@ -114,7 +100,6 @@
 
 										<tbody>
 											<?php
-
 											$id_user = $_SESSION['id_user'];
 											$_mysqli = new mysqli("localhost", "root", "", "luqefoto");
 											$comot = $_mysqli->query("select *from tbl_pesan,tbl_user,tbl_paket where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_user.id_user='$id_user'");
