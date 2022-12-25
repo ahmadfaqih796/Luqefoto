@@ -97,10 +97,10 @@
 									);
 									$data = mysqli_fetch_array($tampil_bukti); ?>
 									<?php if (!$data) { ?>
-										<img src="images/bukti-pembayaran/no-img.png" alt="kosong" style="width: 300px;">
+										<img src="images/bukti-pembayaran/no-img.png" alt="kosong" style="width: 300px; margin: 0 auto; display: block;">
 									<?php
 									} else { ?>
-										<img src="images/bukti-pembayaran/<?= $data["file"]; ?>" alt="<?= $data["file"]; ?>" style="width: 300px;">
+										<img src="images/bukti-pembayaran/<?= $data["file"]; ?>" alt="<?= $data["file"]; ?>" style="width: 300px; margin: 0 auto; display: block;">
 									<?php
 									} ?>
 

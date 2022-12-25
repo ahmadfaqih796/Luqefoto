@@ -34,7 +34,7 @@ $sql = "DELETE from tbl_pesan where id_pesan='$id_pesan'";
 
 
 	function tampil_data(){
-		$sql = "select*from tbl_pesan,tbl_user,tbl_paket where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket ";
+		$sql = "select*from tbl_pesan,tbl_user,tbl_paket,tbl_bukti where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_bukti.id_pesan=tbl_pesan.id_pesan";
 				$result = mysqli_query($this->getConnection(),$sql);
 				while ($row = mysqli_fetch_array($result)) {
 					$hasil[] = $row;
@@ -97,5 +97,3 @@ $sql = "DELETE from tbl_pesan where id_pesan='$id_pesan'";
 
 	}
 }
-
- ?>
