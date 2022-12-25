@@ -3,19 +3,14 @@ if (empty($_SESSION)) {
 	header("Location: index.php");
 } ?>
 <?php
-
 include '../../class/order.php';
-
 $db = new order();
-
-
 ?>
 <div class="row">
 	<div id="breadcrumb" class="col-md-12">
 		<ol class="breadcrumb">
 			<li><a href="#">Dashboard</a></li>
 			<li><a href="#">Cek Transaksi</a></li>
-
 		</ol>
 	</div>
 </div>
@@ -44,7 +39,6 @@ $db = new order();
 				<table class="table table-bordered table-striped table-hover table-heading table-datatable" id="datatable-1">
 					<thead>
 						<tr>
-
 							<th>Tgl Pesan</th>
 							<th>Tgl Pemotretan</th>
 							<th>ID Pesan </th>
@@ -63,9 +57,7 @@ $db = new order();
 							$now = date("Y-m-d");
 						?>
 							<tr>
-
 								<td><?php echo $x['tgl_pesan']; ?></td>
-
 								<td><?php
 										if ($x['tgl_tour'] < $now) {
 											$txtS = "Kadaluarsa!!";
@@ -79,14 +71,10 @@ $db = new order();
 								<td><img src="/images/bukti-pembayaran/<?= $x['file']; ?>" alt="<?= $x['file']; ?>" style="width: 100px;"></td>
 								<td><?php echo $x['status']; ?></td>
 								<td>
-
-
 									<a href="#" class='btn btn-warning open_modal' id='<?php echo $x['id_pesan']; ?>'><span class="glyphicon glyphicon-pencil"></span></a>
 									<a href="#" onclick="confirm_modal('prosesTrans.php?id=<?php echo $x['id_pesan']; ?>&aksi=hapus');"><button type="button" class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="Delete Data"><i class="fa fa-trash-o"></i></button></a>
 								</td>
 							</tr>
-
-
 						<?php
 						}
 
@@ -112,15 +100,12 @@ $db = new order();
 	</div>
 </div>
 
-
 <?php include('../modal/modal_delete.php');
 ?>
 <div id="ModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 </div>
-
 <div id="ModalDelete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 </div>
-
 
 <script type="text/javascript">
 	$(document).ready(function() {
