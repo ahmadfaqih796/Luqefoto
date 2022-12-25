@@ -67,12 +67,7 @@ $db = new order();
 								<td><?php echo $x['id_pesan']; ?></td>
 								<td>
 									<a href="../../images/bukti-pembayaran/<?php echo $x['file']; ?>" target="_blank">
-										<img 
-										class="img-rounded" 
-										src="../../images/bukti-pembayaran/<?php echo $x['file']; ?>" 
-										alt=""
-										style="width: 200px; margin: 0 auto; display: block;"
-										>
+										<img class="img-rounded" src="../../images/bukti-pembayaran/<?php echo $x['file']; ?>" alt="" style="width: 200px; margin: 0 auto; display: block;">
 									</a>
 								</td>
 							</tr>
@@ -121,6 +116,7 @@ $db = new order();
 		TestTable3();
 		LoadSelect2Script(MakeSelect2);
 	}
+
 	function MakeSelect2() {
 		$('select').select2();
 		$('.dataTables_filter').each(function() {
