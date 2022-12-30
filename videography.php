@@ -1,3 +1,10 @@
+<?php
+include 'class/video.php';
+$db = new video();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,6 +60,14 @@
 <body>
 	<?php include("header.php"); ?>
 	<iframe src="https://www.youtube.com/embed/q84oMQKxk64" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/ogrj2bnNN-4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+	<?php foreach ($db->tampil_data() as $val) { ?>
+		<div class="item" class="">
+			<img src="images/thumbnail/<?= $val['image'] ?>" alt="<?= $val['judul']; ?>">
+		</div>
+	<?php
+	}; ?>
 </body>
 
 </html>
