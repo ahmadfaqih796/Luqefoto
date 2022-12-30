@@ -134,7 +134,6 @@ $db = new wisata();
 								<div class="blog-text">
 									<div class="prod-title">
 										<h3><a href="#"><?php echo $x['nama']; ?></a></h3>
-
 										<p><?php echo $x['konten']; ?></p>
 										<p><a href="tampilWisata.php?id=<?php echo $x['id'] ?>">Learn More...</a></p>
 									</div>
