@@ -45,6 +45,7 @@ $db = new video();
 	<link rel="stylesheet" href="css/cs-select.css">
 	<link rel="stylesheet" href="css/cs-skin-border.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/thumbnail.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -60,14 +61,17 @@ $db = new video();
 <body>
 	<?php include("header.php"); ?>
 	<iframe src="https://www.youtube.com/embed/q84oMQKxk64" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-	<iframe src="https://www.youtube.com/embed/ogrj2bnNN-4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+	<!-- <iframe src="https://www.youtube.com/embed/ogrj2bnNN-4" title="YouTube video player" frameborder="0" allowfullscreen></iframe> -->
 
-	<?php foreach ($db->tampil_data() as $val) { ?>
-		<div class="item" class="">
-			<img src="images/thumbnail/<?= $val['image'] ?>" alt="<?= $val['judul']; ?>">
-		</div>
-	<?php
-	}; ?>
+	<div class="video-thumbnail">
+		<?php foreach ($db->tampil_data() as $val) { ?>
+			<article class="card">
+				<img src="images/thumbnail/<?= $val['image'] ?>" alt="<?= $val['judul']; ?>">
+				<h3><?= $val['judul']; ?></h3>
+			</article>
+		<?php
+		}; ?>
+	</div>
 </body>
 
 </html>
