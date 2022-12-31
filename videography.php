@@ -66,7 +66,9 @@ $db = new video();
 	<div class="video-thumbnail">
 		<?php foreach ($db->tampil_data() as $val) { ?>
 			<article class="card">
-				<img src="images/thumbnail/<?= $val['image'] ?>" alt="<?= $val['judul']; ?>">
+				<a href="<?= $val['url']; ?>" target="_blank" rel="noopener noreferrer">
+					<img src="images/thumbnail/<?= $val['image'] ?>" alt="<?= $val['judul']; ?>">
+				</a>
 				<h3><?= $val['judul']; ?></h3>
 			</article>
 		<?php
