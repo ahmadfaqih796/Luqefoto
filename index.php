@@ -58,8 +58,7 @@ $db = new wisata();
 	<link rel="stylesheet" href="css/cs-skin-border.css">
 
 	<link rel="stylesheet" href="css/style.css">
-
-
+	<link rel="stylesheet" href="css/galeri.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -128,15 +127,13 @@ $db = new wisata();
 					$no = 1;
 					foreach ($db->tampil_data() as $x) {
 					?>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="fh5co-blog animate-box">
-								<a href="#"><img class="img-responsive" src="images/<?php echo $x['gambar']; ?>" alt=""></a>
-								<div class="blog-text">
-									<div class="prod-title">
-										<h3><a href="#"><?php echo $x['nama']; ?></a></h3>
-										<p><?php echo $x['konten']; ?></p>
-										<p><a href="tampilWisata.php?id=<?php echo $x['id'] ?>">Learn More...</a></p>
-									</div>
+						<div class="fh5co-blog animate-box">
+							<a href="#"><img class="img-responsive galerii" src="images/<?php echo $x['gambar']; ?>" height="200" alt=""></a>
+							<div class="blog-text">
+								<div class="prod-title">
+									<h3><a href="#"><?php echo $x['nama']; ?></a></h3>
+									<p><?php echo $x['konten']; ?></p>
+									<p><a href="tampilWisata.php?id=<?php echo $x['id'] ?>">Learn More...</a></p>
 								</div>
 							</div>
 						</div>
