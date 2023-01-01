@@ -128,7 +128,7 @@ $db = new wisata();
 					foreach ($db->tampil_data() as $x) {
 					?>
 						<div class="fh5co-blog animate-box">
-							<a href="tampilWisata.php?id=<?php echo $x['id'] ?>"><img class="img-responsive" src="images/<?php echo $x['gambar']; ?>" height="200" alt=""></a>
+							<a href="galeri.php?id=<?php echo $x['id'] ?>"><img class="img-responsive" src="images/<?php echo $x['gambar']; ?>" height="200" alt=""></a>
 							<div class="blog-text text-center">
 								<div class="prod-title">
 									<h3><a href="#"><?php echo $x['nama']; ?></a></h3>

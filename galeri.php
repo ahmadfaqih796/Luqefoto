@@ -1,45 +1,24 @@
-<?php 
-
+<?php
 include 'class/wisata.php';
-
-$db= new wisata();
-
-
+$db = new wisata();
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Blitar Tourism</title>
+	<title>LUQEFOTO</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
@@ -49,7 +28,7 @@ $db= new wisata();
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -65,63 +44,48 @@ $db= new wisata();
 	<!-- CS Select -->
 	<link rel="stylesheet" href="css/cs-select.css">
 	<link rel="stylesheet" href="css/cs-skin-border.css">
-	
 	<link rel="stylesheet" href="css/style.css">
-
-
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+</head>
 
-	</head>
-	<body>
-		<div id="fh5co-wrapper">
+<body>
+	<div id="fh5co-wrapper">
 		<div id="fh5co-page">
-
-		
-		<?php include("header.php") 
+			<?php include("header.php")
 			?>
-
-
-		<!-- end:header-top -->
-	
-		
-
-								 
-		<?php
-foreach($db->edit($_GET['id']) as $d){
-?>
-
-		<div id="fh5co-tours" class="fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3><?php echo $d['nama'] ?></h3>
-					
+			<!-- end:header-top -->
+			<?php
+			foreach ($db->edit($_GET['id']) as $d) {
+			?>
+				<div id="fh5co-tours" class="fh5co-section-gray">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+								<h3><?php echo $d['nama'] ?></h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="fh5co-blog animate-box text-center">
+								<?php echo $d['konten'] ?>
+							</div>
+							<div class="fh5co-blog animate-box">
+								<img class="img-responsive img-rounded" style="width: 100%;" src="images/<?php echo $d['gambar']; ?>" alt="travel">
+							</div>
+						</div>
 					</div>
 				</div>
-				
-				<div class="row">
-					
-					<div class="col-md-6 animate-box">
-						<?php echo $d['konten'] ?>
-					</div>
-					<div class="col-md-6 animate-box">
-						<img class="img-responsive" src="images/<?php echo $d['gambar']; ?>" alt="travel">
-					</div>
-				</div>
-			</div>
+			<?php } ?>
+			<?php include("footer.php") ?>
+
+
+
 		</div>
-		<?php } ?>
-		<?php include("footer.php") ?>
-
-	
-
-	</div>
-	<!-- END fh5co-page -->
+		<!-- END fh5co-page -->
 
 	</div>
 	<!-- END fh5co-wrapper -->
@@ -151,10 +115,10 @@ foreach($db->edit($_GET['id']) as $d){
 	<!-- CS Select -->
 	<script src="js/classie.js"></script>
 	<script src="js/selectFx.js"></script>
-	
+
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 
-	</body>
-</html>
+</body>
 
+</html>
