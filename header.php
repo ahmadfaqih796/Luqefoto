@@ -13,16 +13,13 @@
 						<a href="videography.php" class="fh5co-sub-ddown">Videography</a>
 					</li>
 					<li><a href="about.php">About</a></li>
-					<li><a href="#">Package</a>
+					<!-- <li><a href="#">Package</a>
 						<ul class="fh5co-sub-menu">
 							<li><a href="#">Menu 1</a></li>
 							<li><a href="#">Menu 2</a></li>
 							<li><a href="#">Menu 3</a></li>
 						</ul>
-					</li>
-
-					<!-- <li><a href="hotel.php">Studio</a></li> -->
-					<!-- <li><a href="contact.php">Contact</a></li> -->
+					</li> -->
 					<?php session_start();
 					if (isset($_SESSION['nama_user'])) {
 					?> <li><a href="order.php">Order</a></li>
