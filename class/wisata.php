@@ -17,6 +17,16 @@ class wisata extends database
 		}
 		return $hasil;
 	}
+	
+	function tampil_data_galeri($id)
+	{
+		$sql = 'SELECT * FROM tbl_galery where id_konten =' . $id;
+		$result = mysqli_query($this->getConnection(), $sql);
+		while ($row = mysqli_fetch_array($result)) {
+			$hasil[] = $row;
+		}
+		return $hasil;
+	}
 
 	function tampil_header()
 	{

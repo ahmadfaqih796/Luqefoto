@@ -76,6 +76,14 @@ $db = new wisata();
 							<div class="fh5co-blog animate-box">
 								<img class="img-responsive img-rounded" style="width: 100%;" src="images/<?php echo $d['gambar']; ?>" alt="travel">
 							</div>
+							<?php
+							foreach ($db->tampil_data_galeri($_GET['id']) as $galeri) {
+							?>
+								<div class="fh5co-blog animate-box">
+									<img class="img-responsive img-rounded" style="width: 100%;" src="images/<?php echo $galeri['image']; ?>" alt="travel">
+								</div>
+							<?php
+							}; ?>
 						</div>
 					</div>
 				</div>
