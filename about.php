@@ -66,7 +66,7 @@
 					of captured moments.</p>
 				<p>We are in love with love and in constant affair with life. We love bold colors, Simpson clouds, bright lights and happy people. And this team here, this is our family. It’s where our paths cross professionally that touch our lives personally. It’s where freedom is encouraged and relationship is inspired. It’s where we feel at home.</p>
 			</article>
-			<img src="images/axioo.jpg" alt="">
+			<img src="images/logo/Logo Hitam.png" alt="">
 		</header>
 		<div class="flex" style="justify-content: space-between;">
 
