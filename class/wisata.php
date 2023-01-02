@@ -25,7 +25,7 @@ class wisata extends database
 		while ($row = mysqli_fetch_array($result)) {
 			$hasil[] = $row;
 		}
-		return $hasil;
+		return $hasil ?? [];
 	}
 
 	function tampil_header()
