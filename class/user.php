@@ -78,9 +78,9 @@ class user extends database
 			echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
 		}
 	}
-	public function order($id_user, $id_paket, $tgl_pesan, $tgl_tour, $alamat)
+	public function order($id_user, $id_paket, $tgl_pesan, $tgl_tour, $alamat_acara)
 	{
-		$sql = "INSERT INTO `tbl_pesan` (`id_pesan`, `id_user`, `id_paket`, `tgl_pesan`, `tgl_tour`, `alamat`) VALUES (NULL, '$id_user','$id_paket','$tgl_pesan','$tgl_tour','$alamat')";
+		$sql = "INSERT INTO `tbl_pesan` (`id_pesan`, `id_user`, `id_paket`, `tgl_pesan`, `tgl_tour`, `alamat_acara`) VALUES (NULL, '$id_user','$id_paket','$tgl_pesan','$tgl_tour','$alamat_acara')";
 		$result = mysqli_query($this->getConnection(), $sql);
 	}
 }

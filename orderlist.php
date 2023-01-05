@@ -118,7 +118,7 @@
 													<td><?php echo $isi_tbl['tgl_tour']; ?></td>
 													<td><?php echo $isi_tbl['nama_paket']; ?></td>
 													<td><?php echo $isi_tbl['harga_paket']; ?> IDR</td>
-													<td><?php echo $isi_tbl['alamat']; ?>Aaaa</td>
+													<td><?php echo $isi_tbl['alamat_acara']; ?></td>
 													<td><?php
 															$now = date("Y-m-d");
 															if ($isi_tbl['status'] == 'S2' && $isi_tbl['tgl_tour'] >= $now || $isi_tbl['status'] == 'S3' && $isi_tbl['tgl_tour'] >= $now) {

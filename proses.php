@@ -20,7 +20,7 @@ if ($aksi == "tambah") {
 	$db->update($_POST['id_user'], $_FILES['foto']['name'], $_POST['nama_user'], $_POST['email_user'], $_POST['no_hp'], $_POST['no_rek'], $_POST['nama_rek'], $_POST['username'], $_POST['password'], $_POST['tgl_lahir'], $_POST['jekel'], $_POST['alamat']);
 	header("location:profil.php");
 } elseif ($aksi == "tambah_order") {
-	$db->order($_POST['id_user'], $_POST['id_paket'], $_POST['tgl_pesan'], $_POST['tgl_tour'], $_POST['alamat']);
+	$db->order($_POST['id_user'], $_POST['id_paket'], $_POST['tgl_pesan'], $_POST['tgl_tour'], $_POST['alamat_acara']);
 
 	header("location:orderlist.php");
 }
