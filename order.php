@@ -165,6 +165,13 @@ $pw = new combo();
 										</div>
 									</div>
 
+									<div class="col-md-6">
+										<label>alamat</label>
+										<div class="form-group">
+											<input type="text" name="alamat" class="form-control">
+										</div>
+									</div>
+
 									<div class="col-md-12">
 										<div class="form-group">
 											<input type="submit" value="Lanjut" class="btn btn-primary">
