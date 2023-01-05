@@ -168,7 +168,7 @@ $pw = new combo();
 									<div class="col-md-6">
 										<label>alamat</label>
 										<div class="form-group">
-											<input type="text" name="alamat" class="form-control">
+											<input type="text" name="alamat"  class="form-control">
 										</div>
 									</div>
 
