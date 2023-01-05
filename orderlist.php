@@ -94,6 +94,7 @@
 												<th class="text-left">Tanggal Foto</th>
 												<th class="text-left">Paket </th>
 												<th class="text-left">Harga Paket</th>
+												<th class="text-left">Alamat</th>
 												<th class="text-left">Aksi</th>
 											</tr>
 										</thead>
@@ -102,7 +103,7 @@
 											<?php
 											$id_user = $_SESSION['id_user'];
 											$_mysqli = new mysqli("localhost", "root", "", "luqefoto");
-											$comot = $_mysqli->query("select *from tbl_pesan,tbl_user,tbl_paket where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_user.id_user='$id_user'");
+											$comot = $_mysqli->query("select * from tbl_pesan,tbl_user,tbl_paket where tbl_pesan.id_user=tbl_user.id_user and tbl_pesan.id_paket=tbl_paket.id_paket and tbl_user.id_user='$id_user'");
 
 											while ($isi_tbl = mysqli_fetch_array($comot)) {
 												if ($isi_tbl['status'] == 'S2') {
@@ -117,6 +118,7 @@
 													<td><?php echo $isi_tbl['tgl_tour']; ?></td>
 													<td><?php echo $isi_tbl['nama_paket']; ?></td>
 													<td><?php echo $isi_tbl['harga_paket']; ?> IDR</td>
+													<td><?php echo $isi_tbl['alamat']; ?>Aaaa</td>
 													<td><?php
 															$now = date("Y-m-d");
 															if ($isi_tbl['status'] == 'S2' && $isi_tbl['tgl_tour'] >= $now || $isi_tbl['status'] == 'S3' && $isi_tbl['tgl_tour'] >= $now) {
