@@ -89,39 +89,6 @@ $db= new paket();
 			<?php include("header.php") ?>
 
 		<!-- end:header-top -->
-	
-		<div class="fh5co-hero">
-			
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/studio2.jpg);">
-				<div class="desc">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-5 col-md-5">
-								<div class="tabulation animate-box">
-
-								  <!-- Nav tabs -->
-								   
-
-								   <!-- Tab panes -->
-									
-
-								</div>
-							</div>
-							<div class="desc2 animate-box">
-							  <div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-									
-									<h2 class="style1" align="center"><span class="style1">Wsfsf</span> <span class="style1">Oskfhkshfsf</span>l</center></h2>
-									<h2 class="style1" align="center"><span class="style1">Profesioanal</span> <span class="style1">dan Terpercaya</span>l</center></h2>
-								  <center><span class="price"><span class="style1" >Paket Foto Murah Berkualitas ADADA</span> <span class="style1">OffASADA</span></span></center>
-								  <!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
 		
 		<div id="fh5co-tours" class="fh5co-section-gray">
 			<div class="container">
