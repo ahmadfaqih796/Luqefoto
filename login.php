@@ -237,7 +237,7 @@
 									<div class="col-md-6">
 										<div class="input-field">
 											<label for="date-start">Tgl Lahir</label>
-											<input type="text" class="form-control" name="tgl_lahir" id="date-start" placeholder="yyyy/mm/dd" />
+											<input type="text" class="form-control" name="tgl_lahir" id="date-start" placeholder="yyyy-mm-dd" />
 										</div>
 									</div>
 									<div class="col-md-6">
