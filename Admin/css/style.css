@@ -16,6 +16,16 @@ body {
 h1, .h1, h2, .h2, h3, .h3 {
   margin:0;
 }
+.form-login {
+  width: 300px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	position: absolute;
+}
+.form-login input[type=text] {
+	padding: 10px;
+}
 #logo {
   position:relative;
   background: #525252 url(../img/devoops_pattern_b10.png) 0 0 repeat;

@@ -421,10 +421,10 @@ figure {
   padding-left: 40px;
 }
 iframe {
-	width: 90%;
-	min-height: 90vh;
-	display: block;
-	margin: 0 auto;
+  width: 90%;
+  min-height: 90vh;
+  display: block;
+  margin: 0 auto;
 }
 #fh5co-logo i {
   position: absolute;
@@ -1895,7 +1895,7 @@ div.cs-select span {
   text-indent: -55px;
   background: #fff;
   transition: all 0.2s ease-out;
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .fh5co-nav-toggle i::before,
 .fh5co-nav-toggle i::after {
