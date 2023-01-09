@@ -80,6 +80,12 @@ if (empty($_SESSION)) {
 						</a>
 					</li>
 					<li class="dropdown">
+						<a href="ajax/data_galeri.php" class="ajax-link">
+							<i class="fa fa-bar-chart-o"></i>
+							<span class="hidden-xs">Galeri</span>
+						</a>
+					</li>
+					<li class="dropdown">
 						<a href="ajax/paket_wisata.php" class="ajax-link">
 							<i class="fa fa-pencil-square-o"></i>
 							<span class="hidden-xs">Paket Pemotretan</span>
