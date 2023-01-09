@@ -1,3 +1,18 @@
+<?php
+function tampil_konten()
+{
+	$koneksi = new mysqli("localhost", "root", "", "luqefoto");
+	$tampil_konten = mysqli_query(
+		$koneksi,
+		"SELECT * FROM tbl_konten"
+	);
+	while ($row = mysqli_fetch_array($tampil_konten)) {
+		$hasil[] = $row;
+	}
+	return $hasil;
+}
+?>
+
 <link rel="stylesheet" href="../../css/animate.css">
 <!-- Icomoon Icon Fonts-->
 <link rel="stylesheet" href="../../css/icomoon.css">
@@ -27,11 +42,12 @@
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="class">Kategori</label>
-							<select class="cs-select cs-skin-border">
-								<option value="" disabled selected>Economy</option>
-								<option value="economy">Economy</option>
-								<option value="first">First</option>
-								<option value="business">Business</option>
+							<select required name="id_konten">
+								<option value="" disabled selected>Pilih</option>
+								<?php foreach (tampil_konten() as $x) {
+								?>
+									<option value="1"><?= $x['nama']; ?></option>
+								<?php } ?>
 							</select>
 						</div>
 					</div>
