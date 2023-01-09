@@ -3,8 +3,8 @@ if (empty($_SESSION)) {
 	header("Location: index.php");
 } ?>
 <?php
-include '../../class/wisata.php';
-$db = new wisata();
+include '../../class/galeri.php';
+$db = new galeri();
 ?>
 <div class="row">
 	<div id="breadcrumb" class="col-md-12">
@@ -20,10 +20,12 @@ $db = new wisata();
 			<div class="box-header">
 				<div class="box-name">
 					<i class="fa fa-usd"></i>
-					<span>Member</span>
+					<span>Galeri</span>
 				</div>
 				<div class="box-icons">
-					<a href="#" data-target="#ModalAdd" data-toggle="modal"><button type="button" class="btn btn-xs btn-success" data-toggle="tooltip" data-placement="top" title="Tambah Data"><b class="glyphicon glyphicon-plus"></b></button></a>
+					<a href="#" data-target="#ModalAdd" data-toggle="modal">
+						<button type="button" class="btn btn-xs btn-success" data-toggle="tooltip" data-placement="top" title="Tambah Data"><b class="glyphicon glyphicon-plus"></b>
+						</button></a>
 					<a class="collapse-link">
 						<i class="fa fa-chevron-up"></i>
 					</a>
@@ -42,24 +44,23 @@ $db = new wisata();
 						<thead>
 							<tr>
 								<th>ID</th>
-								<th>Pemotretan</th>
-								<th>Keterangan</th>
+								<th>Nama</th>
+								<th>Kategori</th>
 								<th>Gambar</th>
 								<th>Opsi</th>
 							</tr>
 						</thead>
 						<tbody>
 							<?php
-							$no = 1;
 							foreach ($db->tampil_data() as $x) {
 							?>
 
 								<!-- Start: list_row -->
 								</tr>
 								<tr>
-									<td><?php echo $x['id']; ?></td>
+									<td><?php echo $x['id_galery']; ?></td>
+									<td><?php echo $x['gambar']; ?></td>
 									<td><?php echo $x['nama']; ?></td>
-									<td><?php echo $x['konten']; ?></td>
 									<td><img class="img-rounded" src="../images/<?php echo $x['gambar']; ?>" alt=""></td>
 									<td>
 										<a href="#" class='btn btn-warning open_modal' id='<?php echo $x['id']; ?>'><span class="glyphicon glyphicon-pencil"></span></a>
@@ -92,7 +93,7 @@ $db = new wisata();
 </div>
 
 <?php include('../modal/modal_delete.php');
-include('../modal/modal_tambah_wisata.php');
+include('../modal/modal_tambah_galery.php');
 
 
 ?>

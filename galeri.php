@@ -1,6 +1,6 @@
 <?php
-include 'class/wisata.php';
-$db = new wisata();
+include 'class/galeri.php';
+$db = new galeri();
 ?>
 <!DOCTYPE html>
 
