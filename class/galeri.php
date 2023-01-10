@@ -18,6 +18,38 @@ class galeri extends database
 		return $hasil;
 	}
 
+	function input($id_konten, $gambar)
+	{
+		$countfiles = count($_FILES['gambar']['name']);
+		$files_arr = array();
+		$upload_location = "../images/galeri/";
+		for ($index = 0; $index < $countfiles; $index++) {
+			if (isset($_FILES['gambar']['name'][$index]) && $_FILES['gambar']['name'][$index] != '') {
+				// File name
+				$filename = $_FILES['gambar']['name'][$index];
+				// Get extension
+				$ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+				// Valid image extension
+				$valid_ext = array("png", "jpeg", "jpg");
+				$id = 1;
+				$sql = "insert into tbl_galery (`id_konten`, `image`) values('$id_konten','$filename')";
+				$result = mysqli_query($this->getConnection(), $sql);
+				// Check extension
+				if (in_array($ext, $valid_ext)) {
+					// Upload file
+					$path = $upload_location . $filename;
+					if (
+						(move_uploaded_file($_FILES['gambar']['tmp_name'][$index], $path))
+					) {
+						$files_arr[] = $path;
+					}
+				}
+			}
+		}
+		echo json_encode($files_arr);
+		echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
+	}
+
 	function tampil_data_galeri($id)
 	{
 		$sql = 'SELECT * FROM tbl_galery where id_konten =' . $id;

@@ -27,6 +27,7 @@ function tampil_konten()
 <!-- CS Select -->
 <link rel="stylesheet" href="../../css/cs-select.css">
 <link rel="stylesheet" href="../../css/cs-skin-border.css">
+<script type="text/javascript" src='../js/jquery/jquery-3.4.1.min.js'></script>
 
 <link rel="stylesheet" href="css/style.css">
 <script src="../../js/modernizr-2.6.2.min.js"></script>
@@ -38,7 +39,7 @@ function tampil_konten()
 				<h4 class="modal-title" id="myModalLabel">Tambah Data Galeri</h4>
 			</div>
 			<div class="modal-body">
-				<form action="prosesWisata.php?aksi=tambah" method="post" enctype="multipart/form-data">
+				<form action="prosesGaleri.php?aksi=tambah" method="post" enctype="multipart/form-data">
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="class">Kategori</label>
@@ -46,19 +47,19 @@ function tampil_konten()
 								<option value="" disabled selected>Pilih</option>
 								<?php foreach (tampil_konten() as $x) {
 								?>
-									<option value="1"><?= $x['nama']; ?></option>
+									<option value="<?= $x['id']; ?>"><?= $x['nama']; ?></option>
 								<?php } ?>
 							</select>
 						</div>
 					</div>
 					<div class="col-md-6">
-						<label>Gambar</label>
 						<div class="form-group">
-							<input type="file" class="form-control" placeholder="Nama" name="nama">
+							<label>Gambar</label>
+							<input type="file" class="form-control" name="gambar[]" multiple>
 						</div>
 					</div>
 					<input type="submit" value="Upload" class="btn btn-success">
-			</div>
+				</div>
 			<div class="modal-footer">
 				<button type="reset" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
 					Cancel
@@ -69,61 +70,6 @@ function tampil_konten()
 	</div>
 </div>
 </div>
-
-<script type="text/javascript">
-	tinymce.init({
-		selector: "textarea",
-		plugins: [
-			"advlist autolink autosave link image lists charmap print preview hr anchor pagebreak spellchecker",
-			"searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
-			"table contextmenu directionality emoticons template textcolor paste textcolor "
-		],
-		toolbar1: "newdocument | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | styleselect formatselect fontselect fontsizeselect",
-		toolbar2: "cut copy paste | searchreplace | bullist numlist | outdent indent blockquote | undo redo | link unlink anchor code | inserttime preview | forecolor backcolor",
-		toolbar3: "table | hr removeformat | subscript superscript | charmap emoticons | print fullscreen | ltr rtl | spellchecker | visualchars visualblocks restoredraft",
-		menubar: false,
-		toolbar_items_size: 'small',
-		image_advtab: true,
-		style_formats: [{
-				title: 'Bold text',
-				inline: 'b'
-			},
-			{
-				title: 'Red text',
-				inline: 'span',
-				styles: {
-					color: '#ff0000'
-				}
-			},
-			{
-				title: 'Red header',
-				block: 'h1',
-				styles: {
-					color: '#ff0000'
-				}
-			},
-			{
-				title: 'Example 1',
-				inline: 'span',
-				classes: 'example1'
-			},
-			{
-				title: 'Example 2',
-				inline: 'span',
-				classes: 'example2'
-			},
-			{
-				title: 'Table styles'
-			},
-			{
-				title: 'Table row 1',
-				selector: 'tr',
-				classes: 'tablerow1'
-			}
-		]
-	});
-</script>
-<script src="../plugins/jquery/jquery-2.1.0.min.js"></script>
 <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../plugins/bootstrap/bootstrap.min.js"></script>

@@ -54,7 +54,6 @@ $db = new galeri();
 							<?php
 							foreach ($db->tampil_data() as $x) {
 							?>
-
 								<!-- Start: list_row -->
 								</tr>
 								<tr>
@@ -70,14 +69,10 @@ $db = new galeri();
 								<!-- End: list_row -->
 							<?php
 							}
-
-
 							?>
-
 						</tbody>
 						<tfoot>
 							<tr>
-
 								<th>ID</th>
 								<th>Pemotretan</th>
 								<th>Keterangan</th>
