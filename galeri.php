@@ -74,13 +74,13 @@ $db = new galeri();
 								<?php echo $d['konten'] ?>
 							</div>
 							<div class="fh5co-blog animate-box">
-								<img class="img-responsive img-rounded" style="width: 100%;" src="images/konten/<?php echo $d['gambar']; ?>" alt="travel">
+								<img class="img-responsive img-rounded" style="width: 80%; margin: 0 auto;" src="images/konten/<?php echo $d['gambar']; ?>" alt="travel">
 							</div>
 							<?php
 							foreach ($db->tampil_data_galeri($d['id']) as $galeri) {
 							?>
 								<div class="fh5co-blog animate-box">
-									<img class="img-responsive img-rounded" style="width: 100%;" src="images/galeri/<?php echo $galeri['image']; ?>" alt="<?= $galeri['image']; ?>">
+									<img class="img-responsive img-rounded" style="width: 80%;  margin: 0 auto;" src="images/galeri/<?php echo $galeri['image']; ?>" alt="<?= $galeri['image']; ?>">
 								</div>
 							<?php
 							}; ?>
