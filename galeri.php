@@ -80,7 +80,7 @@ $db = new galeri();
 							foreach ($db->tampil_data_galeri($d['id']) as $galeri) {
 							?>
 								<div class="fh5co-blog animate-box">
-									<img class="img-responsive img-rounded" style="width: 100%;" src="images/<?php echo $galeri['image']; ?>" alt="travel">
+									<img class="img-responsive img-rounded" style="width: 100%;" src="images/galeri/<?php echo $galeri['image']; ?>" alt="<?= $galeri['image']; ?>">
 								</div>
 							<?php
 							}; ?>

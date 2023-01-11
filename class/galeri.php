@@ -52,7 +52,7 @@ class galeri extends database
 
 	function tampil_data_galeri($id)
 	{
-		$sql = 'SELECT * FROM tbl_galery where id_konten =' . $id;
+		$sql = 'SELECT * from tbl_galery, tbl_konten WHERE tbl_galery.id_konten=tbl_konten.id and id_konten =' . $id;
 		$result = mysqli_query($this->getConnection(), $sql);
 		while ($row = mysqli_fetch_array($result)) {
 			$hasil[] = $row;
@@ -62,7 +62,7 @@ class galeri extends database
 
 	function hapus($id)
 	{
-		$sql = "DELETE from tbl_konten where id='$id'";
+		$sql = "DELETE from tbl_konten where id_galery='$id'";
 		$result = mysqli_query($this->getConnection(), $sql);
 	}
 
