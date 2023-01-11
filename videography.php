@@ -62,7 +62,6 @@ $db = new video();
 	<?php include("header.php"); ?>
 	<iframe src="https://www.youtube.com/embed/q84oMQKxk64" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 	<!-- <iframe src="https://www.youtube.com/embed/ogrj2bnNN-4" title="YouTube video player" frameborder="0" allowfullscreen></iframe> -->
-
 	<div class="video-thumbnail">
 		<?php foreach ($db->tampil_data() as $val) { ?>
 			<article class="card">

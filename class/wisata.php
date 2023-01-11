@@ -42,7 +42,7 @@ class wisata extends database
 	{
 		$sql = "insert into tbl_konten ( `nama`, `konten`, `gambar`) values('$nama','$konten','$gambar')";
 		$result = mysqli_query($this->getConnection(), $sql);
-		move_uploaded_file($_FILES['gambar']['tmp_name'], "../images/" . $_FILES['gambar']['name']);
+		move_uploaded_file($_FILES['gambar']['tmp_name'], "../images/konten/" . $_FILES['gambar']['name']);
 		echo "<script>alert('Gambar Berhasil diupload !');history.go(-1);</script>";
 	}
 

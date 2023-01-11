@@ -74,7 +74,7 @@ $db = new galeri();
 								<?php echo $d['konten'] ?>
 							</div>
 							<div class="fh5co-blog animate-box">
-								<img class="img-responsive img-rounded" style="width: 100%;" src="images/<?php echo $d['gambar']; ?>" alt="travel">
+								<img class="img-responsive img-rounded" style="width: 100%;" src="images/konten/<?php echo $d['gambar']; ?>" alt="travel">
 							</div>
 							<?php
 							foreach ($db->tampil_data_galeri($d['id']) as $galeri) {
