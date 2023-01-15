@@ -3,8 +3,8 @@ if (empty($_SESSION)) {
 	header("Location: index.php");
 } ?>
 <?php
-include '../../class/wisata.php';
-$db = new wisata();
+include '../../class/video.php';
+$db = new video();
 ?>
 <div class="row">
 	<div id="breadcrumb" class="col-md-12">
@@ -43,8 +43,8 @@ $db = new wisata();
 							<tr>
 								<th>ID</th>
 								<th>Judul</th>
-								<th>Link</th>
-								<th>Gambar</th>
+								<th>Deskripsi</th>
+								<th>Url</th>
 								<th>Opsi</th>
 							</tr>
 						</thead>
@@ -53,14 +53,13 @@ $db = new wisata();
 							$no = 1;
 							foreach ($db->tampil_data() as $x) {
 							?>
-
 								<!-- Start: list_row -->
 								</tr>
 								<tr>
-									<td><?php echo $x['id']; ?></td>
-									<td><?php echo $x['nama']; ?></td>
-									<td><?php echo $x['konten']; ?></td>
-									<td><img class="img-rounded" src="../images/konten/<?php echo $x['gambar']; ?>" alt=""></td>
+									<td><?= $x['id']; ?></td>
+									<td><?= $x['judul']; ?></td>
+									<td><?= $x['deskripsi']; ?></td>
+									<td><?= $x['url']; ?></td>
 									<td>
 										<a href="#" class='btn btn-warning open_modal' id='<?php echo $x['id']; ?>'><span class="glyphicon glyphicon-pencil"></span></a>
 										<a href="#" onclick="confirm_modal('prosesWisata.php?id=<?php echo $x['id']; ?>&aksi=hapus');"><button type="button" class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="Delete Data"><i class="fa fa-trash-o"></i></button></a>
@@ -69,18 +68,14 @@ $db = new wisata();
 								<!-- End: list_row -->
 							<?php
 							}
-
-
 							?>
-
 						</tbody>
 						<tfoot>
 							<tr>
-
 								<th>ID</th>
-								<th>Pemotretan</th>
-								<th>Keterangan</th>
-								<th>Gambar</th>
+								<th>Judul</th>
+								<th>Deskripsi</th>
+								<th>Url</th>
 								<th>Opsi</th>
 							</tr>
 						</tfoot>
@@ -92,7 +87,7 @@ $db = new wisata();
 </div>
 
 <?php include('../modal/modal_delete.php');
-include('../modal/modal_tambah_wisata.php');
+include('../modal/modal_tambah_video.php');
 
 
 ?>
@@ -109,7 +104,7 @@ include('../modal/modal_tambah_wisata.php');
 		$(".open_modal").click(function(e) {
 			var m = $(this).attr("id");
 			$.ajax({
-				url: "ajax/edit_wisata.php",
+				url: "ajax/edit_video.php",
 				type: "GET",
 				data: {
 					id: m,
