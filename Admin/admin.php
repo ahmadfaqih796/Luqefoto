@@ -86,7 +86,7 @@ if (empty($_SESSION)) {
 						</a>
 					</li>
 					<li class="dropdown">
-						<a href="ajax/data_galeri.php" class="ajax-link">
+						<a href="ajax/data_video.php" class="ajax-link">
 							<i class="fa fa-video-camera"></i>
 							<span class="hidden-xs">List Video</span>
 						</a>

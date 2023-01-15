@@ -10,7 +10,7 @@ $db = new wisata();
 	<div id="breadcrumb" class="col-md-12">
 		<ol class="breadcrumb">
 			<li><a href="#">Dashboard</a></li>
-			<li><a href="ajax/edit_member.php">Pemotretan</a></li>
+			<li><a href="ajax/edit_member.php">Video</a></li>
 		</ol>
 	</div>
 </div>
@@ -20,10 +20,10 @@ $db = new wisata();
 			<div class="box-header">
 				<div class="box-name">
 					<i class="fa fa-usd"></i>
-					<span>Pemotretan</span>
+					<span>Video</span>
 				</div>
 				<div class="box-icons">
-					<a href="#" data-target="#ModalAdd" data-toggle="modal"><button type="button" class="btn btn-xs btn-success" data-toggle="tooltip" data-placement="top" title="Tambah Data"><b class="glyphicon glyphicon-plus"></b></button></a>
+					<a href="#" data-target="#ModalAdd" data-toggle="modal"><button type="button" class="btn btn-xs btn-success" data-toggle="tooltip" data-placement="top" title="Tambah Data Video"><b class="glyphicon glyphicon-plus"></b></button></a>
 					<a class="collapse-link">
 						<i class="fa fa-chevron-up"></i>
 					</a>
@@ -42,8 +42,8 @@ $db = new wisata();
 						<thead>
 							<tr>
 								<th>ID</th>
-								<th>Pemotretan</th>
-								<th>Keterangan</th>
+								<th>Judul</th>
+								<th>Link</th>
 								<th>Gambar</th>
 								<th>Opsi</th>
 							</tr>

@@ -14,7 +14,7 @@ $db= new admin();
 	<div id="breadcrumb" class="col-md-12">
 		<ol class="breadcrumb">
 			<li><a href="#">Dashboard</a></li>
-			<li><a    href="ajax/paket_wisata.php">Paket Wisata</a></li>
+			<li><a    href="ajax/paket_wisata.php">Data Admin</a></li>
 			
 		</ol>
 	</div>
