@@ -75,14 +75,20 @@ if (empty($_SESSION)) {
 					</li>
 					<li class="dropdown">
 						<a href="ajax/wisata.php" class="ajax-link">
-							<i class="fa fa-bar-chart-o"></i>
+							<i class="fa fa-camera"></i>
 							<span class="hidden-xs">List Pemotretan</span>
 						</a>
 					</li>
 					<li class="dropdown">
 						<a href="ajax/data_galeri.php" class="ajax-link">
-							<i class="fa fa-bar-chart-o"></i>
-							<span class="hidden-xs">Galeri</span>
+							<i class="fa fa-picture-o"></i>
+							<span class="hidden-xs">List Galeri</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="ajax/data_galeri.php" class="ajax-link">
+							<i class="fa fa-video-camera"></i>
+							<span class="hidden-xs">List Video</span>
 						</a>
 					</li>
 					<li class="dropdown">

@@ -18,8 +18,8 @@ $db = new order();
 <!--End Breadcrumb-->
 <!--Start Dashboard 1-->
 <div id="dashboard-header" class="row">
-	<div class="col-xs-10 col-sm-2">
-		<h3>Selamat Datang..., Admin</h3>
+	<div class="col-xs-10">
+		<h3>Selamat Datang Admin</h3>
 	</div>
 </div>
 </div>
