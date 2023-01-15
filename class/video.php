@@ -42,7 +42,7 @@ class video extends database
 
 	function update($id, $judul, $deskripsi, $url)
 	{
-		$sql = "UPDATE tbl_video SET judul='$judul', deskripsi='$deskripsi',url='$url' WHERE id='$id'";
+		$sql = "UPDATE tbl_video SET judul='$judul', deskripsi='$deskripsi', url='$url' WHERE id='$id'";
 		$result = mysqli_query($this->getConnection(), $sql);
 	}
 }
