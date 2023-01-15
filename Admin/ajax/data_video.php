@@ -62,7 +62,7 @@ $db = new video();
 									<td><?= $x['url']; ?></td>
 									<td>
 										<a href="#" class='btn btn-warning open_modal' id='<?php echo $x['id']; ?>'><span class="glyphicon glyphicon-pencil"></span></a>
-										<a href="#" onclick="confirm_modal('prosesWisata.php?id=<?php echo $x['id']; ?>&aksi=hapus');"><button type="button" class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="Delete Data"><i class="fa fa-trash-o"></i></button></a>
+										<a href="#" onclick="confirm_modal('prosesVideo.php?id=<?php echo $x['id']; ?>&aksi=hapus');"><button type="button" class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="Delete Data"><i class="fa fa-trash-o"></i></button></a>
 									</td>
 								</tr>
 								<!-- End: list_row -->
