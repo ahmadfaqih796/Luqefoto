@@ -61,20 +61,12 @@ $db = new video();
 <body>
 	<?php include("header.php"); ?>
 	<iframe src="https://www.youtube.com/embed/q84oMQKxk64" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-	<!-- <iframe src="https://www.youtube.com/embed/ogrj2bnNN-4" title="YouTube video player" frameborder="0" allowfullscreen></iframe> -->
 	<?php foreach ($db->tampil_data() as $val) { ?>
-		<iframe src="<?= $val['url']; ?>" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-		<!-- <article class="card">
-			<a href="<?= $val['url']; ?>" target="_blank" rel="noopener noreferrer">
-				<img src="images/thumbnail/<?= $val['image'] ?>" alt="<?= $val['judul']; ?>">
-			</a>
-			<h3><?= $val['judul']; ?></h3>
-		</article> -->
+		<div class="video-thumbnail">
+			<iframe src="https://www.youtube.com/embed/<?= $val['url']; ?>" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+		</div>
 	<?php
 	}; ?>
-	<!-- <div class="video-thumbnail">
-		
-	</div> -->
 </body>
 
 </html>

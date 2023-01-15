@@ -2,8 +2,11 @@
 	display: flex;
   flex-wrap: wrap;
 	margin-top: 5vh;
-  justify-content: space-evenly;
-	width: 100vw;
+  justify-content: space-around;
+	width: 100%;
+}
+.video-thumbnail iframe {
+	margin: 0 auto;
 }
 .video-thumbnail .card {
 	display: flex;
