@@ -120,7 +120,7 @@ $db = new wisata();
 					$no = 1;
 					foreach ($db->tampil_data() as $x) {
 					?>
-						<div class="fh5co-blog animate-box">
+						<div style="width: 65%; margin: 0 auto;" class="fh5co-blog animate-box">
 							<a href="galeri.php?id=<?php echo $x['id'] ?>"><img class="img-responsive" src="images/konten/<?php echo $x['gambar']; ?>" height="200" alt=""></a>
 							<div class="blog-text text-center">
 								<div class="prod-title">
