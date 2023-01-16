@@ -1,6 +1,8 @@
 <?php
 include 'class/galeri.php';
 $db = new galeri();
+
+error_reporting(0);
 ?>
 <!DOCTYPE html>
 

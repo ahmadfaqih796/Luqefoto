@@ -3,6 +3,7 @@ if (empty($_SESSION)) {
 	header("Location: index.php");
 } ?>
 <?php
+error_reporting(0);
 include '../../class/galeri.php';
 $db = new galeri();
 ?>
