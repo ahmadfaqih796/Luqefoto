@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 include 'class/wisata.php';
 
 $db = new wisata();
@@ -116,13 +116,6 @@ $db = new wisata();
 
 			<div id="fh5co-tours" class="fh5co-section-gray">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-							<h3>Cari Jasa Fotografer Berkualitas ?</h3>
-							<p>Hanya di LUQEFOTO</p>
-						</div>
-					</div>
-
 					<?php
 					$no = 1;
 					foreach ($db->tampil_data() as $x) {

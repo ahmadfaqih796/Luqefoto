@@ -15,6 +15,13 @@
 *	Edit this section
 *
 * ======================================================= */
+* {
+  font-family: raleway;
+}
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
 body {
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.6;
