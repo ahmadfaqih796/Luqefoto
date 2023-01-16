@@ -1,9 +1,10 @@
 .video-thumbnail {
 	display: flex;
   flex-wrap: wrap;
-	margin-top: 5vh;
+	flex-direction: column;
+	margin : 5vh auto;
   justify-content: space-around;
-	width: 100%;
+	width: 80%;
 }
 .video-thumbnail iframe {
 	margin: 0 auto;

@@ -60,9 +60,10 @@ $db = new video();
 
 <body>
 	<?php include("header.php"); ?>
-	<iframe src="https://www.youtube.com/embed/q84oMQKxk64" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 	<?php foreach ($db->tampil_data() as $val) { ?>
 		<div class="video-thumbnail">
+			<h1 style="width: 100%; text-align: center;"><?= $val['judul']; ?></h1>
+			<p style="text-align: center; color: ;"><?= $val['deskripsi']; ?></p>
 			<iframe src="https://www.youtube.com/embed/<?= $val['url']; ?>" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 		</div>
 	<?php
