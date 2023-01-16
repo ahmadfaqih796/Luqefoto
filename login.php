@@ -172,7 +172,7 @@
 					<form action="proses.php?aksi=tambah" method="post" enctype="multipart/form-data">
 						<div class="row animate-box">
 							<div class="col-md-6">
-								<h3 class="section-title">fafafa</h3>
+								<h3 class="section-title">LUQeFOTO</h3>
 								<p>Jasa Pemotretan gambar untuk berbagai acara penting anda</p>
 								<ul class="contact-info">
 									<li><i class="icon-location-pin"></i>Wakanda</li>
