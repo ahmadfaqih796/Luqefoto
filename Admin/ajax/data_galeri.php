@@ -72,15 +72,6 @@ $db = new galeri();
 							}
 							?>
 						</tbody>
-						<tfoot>
-							<tr>
-								<th>ID</th>
-								<th>Pemotretan</th>
-								<th>Keterangan</th>
-								<th>Gambar</th>
-								<th>Opsi</th>
-							</tr>
-						</tfoot>
 					</table>
 				</div>
 			</div>

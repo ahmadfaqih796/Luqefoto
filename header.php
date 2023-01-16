@@ -39,7 +39,7 @@
 					<?php
 					} else {
 					?>
-						<li><a href="login.php">Login</a></li>
+						<li><a href="login.php">Order</a></li>
 					<?php
 					}
 					?>
