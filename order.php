@@ -115,9 +115,9 @@ $pw = new combo();
 					<form action="proses.php?aksi=tambah_order" method="post" enctype="multipart/form-data">
 						<div class="row animate-box">
 							<div class="col-md-6">
-								<h3 class="section-title">Ketentuan Pembookingan</h3>
+								<h3 class="section-title">Ketentuan Booking</h3>
 								<ul class="section-title">
-									<li>Perubahan Peket dan Penginapan silahkan hubungi contact person kami
+									<li>Perubahan booking silahkan hubungi contact person kami
 										yang ada pada website, dan hanya bisa dilakukan 5 hari sebelum hari
 										pemotretan. Kurang dari itu perubahan tidak bisa dilakukan.</li>
 									<li>Pembatalan booking dapat dilakukan 7 hari sebelum tanggal
