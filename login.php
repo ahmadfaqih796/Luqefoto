@@ -57,25 +57,14 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
-	<style type="text/css">
-		<!--
-		.style1 {
-			color: #FF5F00
-		}
-		-->
-	</style>
 </head>
 
 <body>
 	<div id="fh5co">
 		<div id="fh5co-page">
-
 			<?php include("header.php") ?>
-
 			<!-- end:header-top -->
 			<?php
-
 			include 'class/user.php';
 			$user = new user();
 
