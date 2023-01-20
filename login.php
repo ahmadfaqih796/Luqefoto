@@ -88,7 +88,7 @@
 
 			<div class="fh5co-hero">
 
-				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/studio3.jpg);">
+				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/template/pexels-max-ravier-10910631.jpg);">
 					<div class="desc">
 						<div class="container">
 							<div class="row">

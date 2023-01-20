@@ -77,7 +77,7 @@ $pw = new combo();
 			<!-- end:header-top -->
 			<div class="fh5co-hero">
 				<div class="fh5co"></div>
-				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/studio2.jpg);">
+				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/template/pexels-harry-cunningham-harrydigital-7383648.jpg);">
 					<div class="desc">
 						<div class="container">
 							<div class="row">
