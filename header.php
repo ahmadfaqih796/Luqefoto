@@ -35,7 +35,7 @@
 								<li><a href="logout.php">Log Out</a></li>
 							</ul>
 						</li>
-						<li><img src="foto/<?php echo "$_SESSION[foto]"; ?>" width='50px' height='50px' /></li>
+						<li><img src="images/user/<?php echo "$_SESSION[foto]"; ?>" width='50px' height='50px' /></li>
 					<?php
 					} else {
 					?>
