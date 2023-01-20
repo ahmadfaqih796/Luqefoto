@@ -2,13 +2,16 @@
 <html lang="en">
 <?php
 session_start();
+function rupiah($angka)
+{
+	$hasil_rupiah = "Rp. " . number_format($angka, 0, ',', '.');
+	return $hasil_rupiah;
+}
 $peserta = $_SESSION['id_user'];
-if(!$peserta){
+if (!$peserta) {
 	header("location:login.php");
 }
-echo $peserta;
 if (isset($peserta)) {
-	echo $_GET['id'];
 	$koneksi = new mysqli("localhost", "root", "", "luqefoto");
 	$tampil_sertifikat = mysqli_query(
 		$koneksi,
@@ -34,6 +37,8 @@ if (isset($peserta)) {
 
 			body {
 				background-image: none;
+				-webkit-print-color-adjust: exact !important;
+				print-color-adjust: exact !important;
 			}
 
 			.teks {
@@ -46,25 +51,56 @@ if (isset($peserta)) {
 				left: 0.6cm;
 			}
 
-			h3 {
-				width: 100%;
-				font-family: Arial, Helvetica, sans-serif;
-				font-size: 24pt;
-				position: absolute;
-				color: #ffffff;
-			}
-			h3.text-pesan {
-				top: 6%;
-			}
-
 			p {
 				width: 100%;
-				font-family: 'sertifikat';
-				color: #000;
-				font-weight: 700;
-				font-size: 50pt;
-				letter-spacing: 1px;
-				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+				margin-left: -5px;
+				color: white;
+				position: absolute;
+				transform: translate(-50%, -50%);
+			}
+
+			p.nama-order {
+				top: 39%;
+				left: 50%;
+				font-size: 16pt;
+			}
+
+			p.nama-paket {
+				top: 42.5%;
+				left: 50%;
+				font-size: 16pt;
+			}
+
+			p.tgl_pemesanan {
+				top: 46%;
+				left: 50%;
+				font-size: 16pt;
+			}
+
+			p.tgl_pemotretan {
+				top: 49.5%;
+				left: 50%;
+				font-size: 16pt;
+			}
+
+			p.alamat {
+				top: 53.5%;
+				left: 50%;
+				font-size: 16pt;
+			}
+
+			p.total-harga {
+				top: 64.8%;
+				left: 50%;
+				font-size: 16pt;
+			}
+
+			p.total-pembayaran {
+				top: 70.8%;
+				left: 62%;
+				color: black;
+				font-size: 14pt;
 			}
 
 			@font-face {
@@ -74,8 +110,10 @@ if (isset($peserta)) {
 
 			img {
 				display: block;
-				width: 29.7cm;
-				height: 19cm;
+				position: absolute;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
 			}
 
 			a,
@@ -85,10 +123,10 @@ if (isset($peserta)) {
 
 			@media print {
 				@page {
-					size: A4 landscape;
+					size: A4 portrait;
 					margin: 1cm;
-					width: 29.7cm;
-					height: 21cm;
+					width: 21cm;
+					height: 29.7cm;
 				}
 			}
 		</style>
@@ -96,10 +134,14 @@ if (isset($peserta)) {
 
 	<body>
 		<page>
-			<!-- <img src="../../assets/gambar/sertifikat/Workshop Hack the Game.jpg" alt=""> -->
-
-			<h3><?= $data['nama_user'] ?></h3>
-			<h3 class="text-pesan"><?= $data['tgl_pesan'] ?></h3>
+			<img src="/images/bg-cetak/form-cetak.jpg" alt="Cetak">
+			<p class="nama-order">Nama Pemesanan : <?= $data['nama_user'] ?></p>
+			<p class="nama-paket">Nama Paket : <?= $data['nama_paket'] ?></p>
+			<p class="tgl_pemesanan">Tgl Pemesanan : <?= $data['tgl_pesan'] ?></p>
+			<p class="tgl_pemotretan">Tgl Pemotretan : <?= $data['tgl_tour'] ?></p>
+			<p class="alamat">Alamat Acara : <?= $data['alamat_acara'] ?></p>
+			<p class="total-harga">Total Harga : <?= rupiah($data['harga_paket']) ?></p>
+			<p class="total-pembayaran">Total Pembayaran : <?= rupiah($data['harga_paket']) ?></p>
 		</page>
 		<div class="pesan">
 			<h2>Gunakan Web Browser Firefox atau Chrome, ukuran kertas A4 dengan orientasi Landscape untuk cetak atau juga
