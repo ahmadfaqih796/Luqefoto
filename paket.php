@@ -73,7 +73,7 @@ $db = new paket();
 						foreach ($db->tampil_data() as $x) {
 						?>
 							<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
-								<div href="#"><img src="images/fotografer.jpg" alt="fotografer" class="img-responsive">
+								<div href="#"><img src="images/template/fotografer.jpg" alt="fotografer" class="img-responsive">
 									<div class="desc">
 										<span></span>
 										<h3><?php echo $x['nama_paket']; ?></h3>
