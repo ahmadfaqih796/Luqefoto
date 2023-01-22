@@ -1,33 +1,33 @@
      <?php
-			session_start();
-			if ($_SESSION) {
-				header("Location: operator.php");
-			} elseif ($_SESSION) {
-				header("Location: admin.php");
-			}
-			include '../class/admin.php';
-			$admin = new admin();
-			if (isset($_SESSION['Login'])) {
-				header("location:index.php");
-			}
-			if (isset($_POST['Login'])) {
-				$login = $admin->login_admin($_POST['username'], $_POST['password']);
-				if ($login) {
-					if ($_SESSION['level'] == "1") {
-						header("location: admin.php");
-					} else if ($_SESSION['level'] == "2") {
-						header("location: operator.php");
-					}
-				} else {
-			?>
+		session_start();
+		if ($_SESSION) {
+			header("Location: operator.php");
+		} elseif ($_SESSION) {
+			header("Location: admin.php");
+		}
+		include '../class/admin.php';
+		$admin = new admin();
+		if (isset($_SESSION['Login'])) {
+			header("location:index.php");
+		}
+		if (isset($_POST['Login'])) {
+			$login = $admin->login_admin($_POST['username'], $_POST['password']);
+			if ($login) {
+				if ($_SESSION['level'] == "1") {
+					header("location: admin.php");
+				} else if ($_SESSION['level'] == "2") {
+					header("location: operator.php");
+				}
+			} else {
+		?>
      		<!-- muncul peringatan kalau login gagal dan langsung kembali ke halaman login.php-->
      		<script type="text/javascript">
      			alert("Login Gagal .");
      			window.location.href = "index.php"
      		</script> <?php
-									}
-								}
-										?>
+						}
+					}
+							?>
      <!DOCTYPE html>
      <html lang="en">
 
