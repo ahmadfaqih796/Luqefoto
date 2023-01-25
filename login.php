@@ -126,7 +126,7 @@
 														</div>
 													</div>
 													<br>
-													<h1 style="font-size: 16px; text-align: center;">Lupa password ? hubungi WhatsApp <a href="https://wa.me/082217314511?text=I'm%20interested%20in%20your%20car%20for%20sale" target="_blank" style="color: green; font-weight: 700;">Admin</a></h1>
+													<h1 style="font-size: 16px; text-align: center;">Lupa password ? hubungi WhatsApp <a href="https://wa.me/+6282217314511?text=Admin, saya lupa password" target="_blank" style="color: green; font-weight: 700;">Admin</a></h1>
 												</div>
 
 											</form>
