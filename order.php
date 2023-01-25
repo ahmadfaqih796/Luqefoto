@@ -127,7 +127,7 @@ $pw = new combo();
 									<div class="col-md-6">
 										<label>Pilih Paket Foto</label>
 										<div class="form-group">
-											<select name="id_paket" class="form-control">
+											<select name="id_paket" class="form-control" required>
 												<option value="">--Pilih Paket Pemotretan-</option>
 												<?php
 												$a = 1;
@@ -142,7 +142,7 @@ $pw = new combo();
 									<div class="col-md-6">
 										<div class="input-field">
 											<label for="date-start">Tgl Pemotretan</label>
-											<input type="text" class="form-control" id="date-start" name="tgl_tour" />
+											<input type="text" class="form-control" id="date-start" name="tgl_tour" required/>
 										</div>
 									</div>
 
@@ -156,7 +156,7 @@ $pw = new combo();
 									<div class="col-md-6">
 										<label>Alamat Acara</label>
 										<div class="form-group">
-											<input type="text" name="alamat_acara"  class="form-control">
+											<input type="text" name="alamat_acara"  class="form-control" required>
 										</div>
 									</div>
 
