@@ -177,62 +177,61 @@
 									<div class="col-md-6">
 										<div class="form-group">
 											<label>Foto</label>
-											<input type="file" class="form-control" name="foto">
+											<input type="file" class="form-control" name="foto" required>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<label>Nama</label>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Nama" name="nama_user">
+											<input type="text" class="form-control" placeholder="Nama" name="nama_user" required>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<label>Email</label>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email" name="email_user">
+											<input type="text" class="form-control" placeholder="Email" name="email_user" required>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<label>Telpon</label>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="No Hp" name="no_hp">
+											<input type="text" class="form-control" placeholder="No Hp" name="no_hp" required>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<label>No Rekening</label>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="No Rekening" name="no_rek">
+											<input type="text" class="form-control" placeholder="No Rekening" name="no_rek" required>
 										</div>
 									</div>
 									<div class="col-md-6">
 
 										<label>Nama Rekening</label>
 										<div class="form-group">
-											<input type="text" class="form-control" name="nama_rek" placeholder="Atas nama rekening">
+											<input type="text" class="form-control" name="nama_rek" placeholder="Atas nama rekening" required>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<label>Username</label>
 										<div class="form-group">
-											<input type="text" class="form-control" name="username" placeholder="Username">
+											<input type="text" class="form-control" name="username" placeholder="Username" required>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<label>Password</label>
 										<div class="form-group">
-											<input type="text" class="form-control" name="password" placeholder="Password">
+											<input type="text" class="form-control" name="password" placeholder="Password" required>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="input-field">
 											<label for="date-start">Tgl Lahir</label>
-											<input type="text" class="form-control" name="tgl_lahir" id="date-start" placeholder="yyyy-mm-dd" />
+											<input type="text" class="form-control" name="tgl_lahir" id="date-start" placeholder="yyyy-mm-dd" required/>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<label>Jenis Kelamin</label>
 										<div class="form-group">
-
 											<p>
 												<input type="radio" name="jekel" value="L">Laki-laki <br />
 												<input type="radio" name="jekel" value="P">Perempuan
@@ -243,7 +242,7 @@
 									<div class="col-md-12">
 										<label>Alamat</label>
 										<div class="form-group">
-											<textarea name="alamat" class="form-control" cols="30" rows="7" placeholder="Alamat"></textarea>
+											<textarea name="alamat" class="form-control" cols="30" rows="7" placeholder="Alamat" required></textarea>
 										</div>
 									</div>
 									<div class="col-md-12">
