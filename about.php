@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Videography</title>
+	<title>About</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by Faqih" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -59,49 +59,48 @@
 			<article>
 				<legend>ABOUT</legend>
 				<h1>Meet The Team</h1>
-				<p>We’re a group of passionate young people – photographers, videographers, designers, editors and stylists – working together to create beautiful masterpieces.</p>
-				<p>Every day we step into AXIOO house feeling inspired – ignited by
-					passion, fueled by laughter, challenged by creativity. We find ourselves fascinated by the love stories and mesmerized by the twinkle of an eye,
-					the sincerity of a smile and the miracle of a hug. It’s how we create pages
-					of captured moments.</p>
-				<p>We are in love with love and in constant affair with life. We love bold colors, Simpson clouds, bright lights and happy people. And this team here, this is our family. It’s where our paths cross professionally that touch our lives personally. It’s where freedom is encouraged and relationship is inspired. It’s where we feel at home.</p>
+				<p>Hi! We are LUQEFOTO <br><br>
+
+					We are young people who are passionate about creating works of art – photographers, videographers, designers, editors and stylists – working together to create beautiful masterpieces.</p>
+				<p>Every day we are always with LUQEFOTO with feelings that are inspired - aroused by passion, fueled by love, challenged by creativity and we find our hearts adrift by the love story and the charm of sincere eyes, sincere smiles and the beauty of togetherness. That's how we capture every moment of the moment we create.</p>
+				<p>out of nowhere, we feel like we fall in love over and over again. there are some colors that can only be understood with love, there are some beauties that cannot be conceptualized by reason and taste, and we try to create them all with our hands, so that in our hearts we are created, independent in working, independent in creating, and we do with pleasure.</p>
 			</article>
 			<img src="images/logo/Logo Hitam.png" alt="">
 		</header>
 		<div class="flex" style="justify-content: space-between;">
 
 			<main class="crew">
-				<h1 class="judul-konten">Crew</h1>
+				<h1 class="judul-konten">CREW</h1>
 				<div class="flex" style="flex-wrap: wrap;">
 					<section class="gambar-crew">
-						<img src="https://picsum.photos/300/300" alt="">
+						<img src="images/apriy_pp.jpg" alt="">
 						<article>
-							<h3 id="apri">Apriyanto</h3>
-							<a href="#">
+							<h3 id="apri">Apriy Ahmad</h3>
+							<a href="https://www.instagram.com/apriyfoto/">
 								<i class="fa-brands fa-instagram"></i>
-								Apri
+								Aprifoto
 							</a>
-							<p>Apri dreams to keep the moments through her photographs.</p>
+							<p>Videographer</p>
 						</article>
 					</section>
 					<section class="gambar-crew">
-						<img src="https://picsum.photos/300/300" alt="">
+						<img src="images/oner.jpeg" alt="">
 						<article>
-							<h3 id="apri">Apriyanto</h3>
-							<a href="#">
+							<h3 id="apri">Ari. S</h3>
+							<a href="https://www.instagram.com/ariesetya_/">
 								<i class="fa-brands fa-instagram"></i>
-								Apri
+								ariesetya_
 							</a>
-							<p>Apri dreams to keep the moments through her photographs.</p>
+							<p>Oner Luqefoto Studio</p>
 						</article>
 					</section>
 					<section class="gambar-crew">
-						<img src="https://picsum.photos/300/300" alt="">
+						<img src="images/muklis.jpeg" alt="">
 						<article>
-							<h3 id="apri">Apriyanto</h3>
+							<h3 id="apri">Muklis</h3>
 							<a href="#">
 								<i class="fa-brands fa-instagram"></i>
-								Apri
+								Muklis
 							</a>
 							<p>Apri dreams to keep the moments through her photographs.</p>
 						</article>
@@ -109,8 +108,8 @@
 				</div>
 			</main>
 			<main class="nama-crew">
-				<h1>Who We Are</h1>
-				<a href="#apri">Apri</a>
+				<h1>WHO WE ARE</h1>
+				<a href="#apri">Apri <br>Ari.S<br>Muklis</a>
 			</main>
 		</div>
 	</main>

@@ -53,7 +53,7 @@
                 
                   <p>
                     <input type="radio"  name="level" value="1">Administrator<br/>
-                          <input type="radio"  name="level" value="2">Operator</p>
+                          <!-- <input type="radio"  name="level" value="2">Operator</p> -->
                   </div>
                 </div>
                 

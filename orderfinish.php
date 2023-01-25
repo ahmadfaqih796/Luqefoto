@@ -144,10 +144,8 @@ if (isset($peserta)) {
 			<p class="total-pembayaran">Total Pembayaran : <?= rupiah($data['harga_paket']) ?></p>
 		</page>
 		<div class="pesan">
-			<h2>Gunakan Web Browser Firefox atau Chrome, ukuran kertas A4 dengan orientasi Landscape untuk cetak atau juga
-				bisa simpan dengan format PDF dan jika nama tidak muncul di menu print maka tekan cancel lalu pilih cetak
-				kembali</h2>
-			<a href="javascript:window.print();">Cetak</a>
+			
+			<a href="javascript:window.print();">DOWNLOAD</a>
 		</div>
 	</body>
 <?php

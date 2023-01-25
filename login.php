@@ -88,7 +88,7 @@
 
 			<div class="fh5co-hero">
 
-				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/template/pexels-max-ravier-10910631.jpg);">
+				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/coverLogin.jpg);">
 					<div class="desc">
 						<div class="container">
 							<div class="row">
@@ -137,7 +137,7 @@
 
 
 										<center>
-											<span class="price style1">LUQEFOTO
+											<span class="price style1">
 										</center>
 										<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
 									</div>
@@ -155,19 +155,19 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 							<h3>Belum Punya Akun??</h3>
-							<p>Silahkan daftar untuk mendapatkan sesi pemotretan di wesssfsfsfs</p>
+							<p>Silahkan daftar untuk mendapatkan promo menarik</p>
 						</div>
 					</div>
 					<form action="proses.php?aksi=tambah" method="post" enctype="multipart/form-data">
 						<div class="row animate-box">
 							<div class="col-md-6">
-								<h3 class="section-title">LUQeFOTO</h3>
-								<p>Jasa Pemotretan gambar untuk berbagai acara penting anda</p>
+								<h3 class="section-title">LUQEFOTO</h3>
+								<p>Jasa Documentasi untuk berbagai acara penting anda</p>
 								<ul class="contact-info">
-									<li><i class="icon-location-pin"></i>Wakanda</li>
-									<li><i class="icon-phone2"></i>08124242424</li>
-									<li><i class="icon-mail"></i><a href="#">wadad@gmail.com</a></li>
-									<li><i class="icon-globe2"></i><a href="#">wedadadl.com</a></li>
+									<li><i class="icon-location-pin"></i>Jln Irigasi Baru II D16 No. 8 Bekasi</li>
+									<li><i class="icon-phone2"></i>0812-8395-2627</li>
+									<li><i class="icon-mail"></i><a href="#">luqefotostudio@gmail.com</a></li>
+									<li><i class="icon-globe2"></i><a href="#">www.luqefoto.com</a></li>
 								</ul>
 							</div>
 							<div class="col-md-6">

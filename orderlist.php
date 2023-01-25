@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Wede Official</title>
+	<title>LUQEFOTO</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -73,8 +73,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-							<h3>Order List</h3>
-							<h2>Pembayaran Melalui Rek Danamon Atas Wede Official</h2>
+							<h3>ORDER LIST</h3>
+							<h2>Pembayaran Melalui Rek BCA Atas LUQEFOTO</h2>
 							<h2>No Rek : 123456789</h2>
 							<p>Lengkapi Form Berikut</p>
 						</div>
