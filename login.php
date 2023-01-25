@@ -160,7 +160,7 @@
 							<p>Silahkan daftar untuk mendapatkan promo menarik</p>
 						</div>
 					</div>
-					<form action="proses.php?aksi=tambah" method="post" enctype="multipart/form-data">
+					<form name="contact-form" id="myForm" action="proses.php?aksi=tambah" method="post" enctype="multipart/form-data">
 						<div class="row animate-box">
 							<div class="col-md-6">
 								<h3 class="section-title">LUQEFOTO</h3>
@@ -249,7 +249,7 @@
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="submit" value="Daftar" class="btn btn-primary">
+											<input type="submit" value="Daftar" class="btn btn-primary" onclick="submitForm()">
 										</div>
 									</div>
 								</div>
@@ -272,6 +272,15 @@
 	<!-- END fh5co-wrapper -->
 
 	<!-- jQuery -->
+	<script>
+		function submitForm() {
+			var frm = document.getElementsByName('contact-form')[0];
+			frm.submit(); // Submit the form
+			frm.reset(); // Reset all form data
+			return false; // Prevent page refresh
+			
+		}
+	</script>
 
 
 	<script src="js/jquery.min.js"></script>
