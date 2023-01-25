@@ -15,7 +15,7 @@ $pw = new combo();
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Wede Official</title>
+	<title>LUQEFOTO</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="website luqefoto" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -77,7 +77,7 @@ $pw = new combo();
 			<!-- end:header-top -->
 			<div class="fh5co-hero">
 				<div class="fh5co"></div>
-				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/template/pexels-harry-cunningham-harrydigital-7383648.jpg);">
+				<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/coverOrder.jpg);">
 					<div class="desc">
 						<div class="container">
 							<div class="row">
@@ -88,14 +88,7 @@ $pw = new combo();
 									</div>
 								</div>
 								<div class="desc2 animate-box">
-									<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-										<h2 align="center">LUQEFOTO</h2>
-										<h3 align="center">Untuk hasil foto yang luar biasa</h3>
-										<span class="price ">
-											<center>Harga Bersahabat</center>
-										</span>
-										<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -115,15 +108,10 @@ $pw = new combo();
 					<form action="proses.php?aksi=tambah_order" method="post" enctype="multipart/form-data">
 						<div class="row animate-box">
 							<div class="col-md-6">
-								<h3 class="section-title">Ketentuan Booking</h3>
+								<h3 class="section-title">Ketentuan Pemesanan</h3>
 								<ul class="section-title">
-									<li>Perubahan booking silahkan hubungi contact person kami
-										yang ada pada website, dan hanya bisa dilakukan 5 hari sebelum hari
-										pemotretan. Kurang dari itu perubahan tidak bisa dilakukan.</li>
-									<li>Pembatalan booking dapat dilakukan 7 hari sebelum tanggal
-										pemotretan yang telah di booking. Biaya yang telah ditranfer
-										akan dikembalikan dengan potongan 10% dari total biaya dan harus
-										melakukan konfirmasi terlebih dahulu melalui contact person kami.</li>
+									<li>Jika ada perubahan paket atau tanggal pemotretan silahkan hubungi contact person kami yang ada di website.</li>
+									<li>Pembatalan acara dapat dilakukan 7 hari sebelum tanggal pemotretan, biaya yang telah ditransfer akan di kembalikan dengan potongan 20% dari total biaya dan harus melakukan konfirmasi terdahulu melalui contact person kami.</li>
 								</ul><br>
 							</div>
 
@@ -166,7 +154,7 @@ $pw = new combo();
 									</div>
 
 									<div class="col-md-6">
-										<label>alamat</label>
+										<label>Alamat Acara</label>
 										<div class="form-group">
 											<input type="text" name="alamat_acara"  class="form-control">
 										</div>

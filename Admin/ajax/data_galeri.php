@@ -63,9 +63,8 @@ $db = new galeri();
 									<td><?php echo $x['nama']; ?></td>
 									<td><img class="img-rounded" src="../images/galeri/<?php echo $x['image']; ?>" alt=""></td>
 									<td>
-										<a href="#" class='btn btn-warning open_modal' id='<?php echo $x['id_galery']; ?>'><span class="glyphicon glyphicon-pencil"></span></a>
-										<a href="#" onclick="confirm_modal('prosesGaleri.php?id=<?php echo $x['id']; ?>&aksi=hapus');"><button type="button" class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="Delete Data"><i class="fa fa-trash-o"></i></button></a>
-									</td>
+									<a href="#" class='btn btn-warning open_modal' id='<?php echo $x['id']; ?>'><span class="glyphicon glyphicon-pencil"></span></a>
+										<a href="#" onclick="confirm_modal('prosesWisata.php?id=<?php echo $x['id']; ?>&aksi=hapus');"><button type="button" class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="Delete Data"><i class="fa fa-trash-o"></i></button></a>
 								</tr>
 								<!-- End: list_row -->
 							<?php
