@@ -45,7 +45,6 @@ $db = new admin();
 								<th>Foto</th>
 								<th>User Admin</th>
 								<th>Password</th>
-								<th>Level</th>
 								<th>Nama</th>
 								<th>Opsi</th>
 							</tr>
@@ -63,7 +62,6 @@ $db = new admin();
 									<td><img class="img-rounded" src="../images/user/<?php echo $x['foto']; ?>" alt=""></td>
 									<td><?php echo $x['user_admin']; ?></td>
 									<td><?php echo $x['pass_admin']; ?></td>
-									<td><?php echo $x['level']; ?></td>
 									<td><?php echo $x['nama']; ?></td>
 									<td>
 										<a href="#" class='btn btn-warning open_modal' id='<?php echo $x['id']; ?>'><span class="glyphicon glyphicon-pencil"></span></a>
@@ -75,17 +73,6 @@ $db = new admin();
 							}
 							?>
 						</tbody>
-						<tfoot>
-							<tr>
-								<th>ID</th>
-								<th>Foto</th>
-								<th>User Admin</th>
-								<th>Password</th>
-								<th>Level</th>
-								<th>Nama</th>
-								<th>Opsi</th>
-							</tr>
-						</tfoot>
 					</table>
 				</div>
 			</div>

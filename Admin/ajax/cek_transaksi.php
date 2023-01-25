@@ -82,18 +82,6 @@ $db = new order();
 						?>
 						<!-- End: list_row -->
 					</tbody>
-					<tfoot>
-						<tr>
-							<th>ID Pesan </th>
-							<th>Tgl Pesan</th>
-							<th>Tgl Pemotretan</th>
-							<th>Nama</th>
-							<th>Paket</th>
-							<th>Studio</th>
-							<th>Status</th>
-							<th>Pilihan</th>
-						</tr>
-					</tfoot>
 				</table>
 			</div>
 		</div>

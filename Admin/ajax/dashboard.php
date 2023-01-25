@@ -76,13 +76,6 @@ $db = new order();
 						}
 						?>
 					</tbody>
-					<tfoot>
-						<tr>
-							<th>Nama User</th>
-							<th>ID Pesan</th>
-							<th>Tanda Bukti</th>
-						</tr>
-					</tfoot>
 				</table>
 			</div>
 		</div>

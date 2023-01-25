@@ -70,15 +70,6 @@ $db = new video();
 							}
 							?>
 						</tbody>
-						<tfoot>
-							<tr>
-								<th>ID</th>
-								<th>Judul</th>
-								<th>Deskripsi</th>
-								<th>Url</th>
-								<th>Opsi</th>
-							</tr>
-						</tfoot>
 					</table>
 				</div>
 			</div>
