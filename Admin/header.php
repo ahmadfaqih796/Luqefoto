@@ -6,14 +6,8 @@
 			</div>
 			<div id="top-panel" class="col-xs-12 col-sm-10">
 				<div class="row">
-					<div class="col-xs-8 col-sm-4">
-
-						<div id="search">
-							<input type="text" placeholder="search" />
-							<i class="fa fa-search"></i>
-						</div>
-					</div>
-					<div class="col-xs-4 col-sm-8 top-panel-right">
+					
+					<div class="col-xs-4 col-sm-12 top-panel-right">
 						<ul class="nav navbar-nav pull-right panel-menu">
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle account" data-toggle="dropdown">
