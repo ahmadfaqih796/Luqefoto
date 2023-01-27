@@ -28,7 +28,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 #logo {
   position:relative;
-  background: #525252 url(../img/devoops_pattern_b10.png) 0 0 repeat;
+  /* background: #525252 url(../img/devoops_pattern_b10.png) 0 0 repeat; */
 }
 #logo a {
   color: #fff;
@@ -79,7 +79,7 @@ a.show-sidebar:hover {
   z-index: inherit;
   padding-bottom: 3000px !important;
   margin-bottom: -3000px !important;
-  background: #6AA6D6 url(../img/devoops_pattern_b10.png) 0 0 repeat;
+  background: #f98b88 url(../img/devoops_pattern_b10.png) 0 0 repeat;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -612,7 +612,7 @@ ul.DTTT_dropdown.dropdown-menu > li:hover > a {
   padding: 0;
   line-height: 40px;
   background: #525252;
-  background: #5a8db6 url(../img/devoops_pattern_b10.png) 0 0 repeat;
+  background: #f98b88 url(../img/devoops_pattern_b10.png) 0 0 repeat;
   margin-bottom: 20px;
 }
 .breadcrumb {

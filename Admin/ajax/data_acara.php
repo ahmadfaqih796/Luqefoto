@@ -10,7 +10,7 @@ $db = new acara();
 	<div id="breadcrumb" class="col-md-12">
 		<ol class="breadcrumb">
 			<li><a href="#">Dashboard</a></li>
-			<li><a href="#">Cek Transaksi</a></li>
+			<li><a href="#">List Acara</a></li>
 		</ol>
 	</div>
 </div>
@@ -20,7 +20,7 @@ $db = new acara();
 			<div class="box-header">
 				<div class="box-name">
 					<i class="fa fa-upload"></i>
-					<span>Status Transaksi </span>
+					<span>List Acara</span>
 				</div>
 				<div class="box-icons">
 					<a class="collapse-link">
