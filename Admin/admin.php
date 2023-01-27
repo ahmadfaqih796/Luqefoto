@@ -80,6 +80,12 @@ if (empty($_SESSION)) {
 						</a>
 					</li>
 					<li class="dropdown">
+						<a href="ajax/data_acara.php" class="ajax-link">
+							<i class="fa fa-pencil-square-o"></i>
+							<span class="hidden-xs">List Acara</span>
+						</a>
+					</li>
+					<li class="dropdown">
 						<a href="ajax/data_galeri.php" class="ajax-link">
 							<i class="fa fa-picture-o"></i>
 							<span class="hidden-xs">List Galeri</span>
@@ -100,13 +106,13 @@ if (empty($_SESSION)) {
 					</li>
 					<li class="dropdown">
 						<a href="ajax/data_admin.php" class="ajax-link">
-							<i class="fa fa-pencil-square-o"></i>
+							<i class="fa fa-user"></i>
 							<span class="hidden-xs">Data Admin</span>
 						</a>
 					</li>
 					<li class="dropdown">
 						<a class="ajax-link" href="ajax/data_member.php">
-							<i class="fa fa-map-marker"></i>
+							<i class="fa fa-user"></i>
 							<span class="hidden-xs">Data Member</span>
 						</a>
 					</li>
