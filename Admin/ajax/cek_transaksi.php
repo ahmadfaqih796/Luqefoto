@@ -69,7 +69,7 @@ $db = new order();
 								<td><?php echo $x['nama_user']; ?></td>
 								<td><?php echo $x['nama_paket']; ?></td>
 								<td><img src="/images/bukti-pembayaran/<?= $x['file']; ?>" alt="<?= $x['file']; ?>" style="width: 100px;"></td>
-								<td><?php echo $x['status']; ?></td>
+								<td><?= $x['status'] === "S2" ? "Lunas" : "Belum Lunas"; ?></td>
 								<td>
 									<a href="#" class='btn btn-warning open_modal' id='<?php echo $x['id_pesan']; ?>'><span class="glyphicon glyphicon-pencil"></span></a>
 									<a href="#" onclick="confirm_modal('prosesTrans.php?id=<?php echo $x['id_pesan']; ?>&aksi=hapus');"><button type="button" class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="top" title="Delete Data"><i class="fa fa-trash-o"></i></button></a>
