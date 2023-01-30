@@ -160,7 +160,7 @@
 							<p>Silahkan daftar untuk mendapatkan promo menarik</p>
 						</div>
 					</div>
-					<form name="contact-form" id="myForm" action="proses.php?aksi=tambah" method="post" enctype="multipart/form-data">
+					<form action="proses.php?aksi=tambah" method="post" enctype="multipart/form-data">
 						<div class="row animate-box">
 							<div class="col-md-6">
 								<h3 class="section-title">LUQEFOTO</h3>

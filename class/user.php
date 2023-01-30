@@ -43,10 +43,14 @@ class user extends database
 	function input($foto, $nama_user, $email_user, $no_hp, $no_rek, $nama_rek, $username, $password, $tgl_lahir, $jekel, $alamat)
 	{
 
-		$sql = "insert into tbl_user  (`foto`, `nama_user`, `email_user`, `no_hp`, `no_rek`, `nama_rek`, `username`, `password`, `tgl_lahir`, `jekel`, `alamat`) values('$foto','$nama_user','$email_user','$no_hp','$no_rek','$nama_rek','$username','$password','$tgl_lahir','$jekel','$alamat')";
+		$sql = "insert into tbl_user (`foto`, `nama_user`, `email_user`, `no_hp`, `no_rek`, `nama_rek`, `username`, `password`, `tgl_lahir`, `jekel`, `alamat`) values('$foto','$nama_user','$email_user','$no_hp','$no_rek','$nama_rek','$username','$password','$tgl_lahir','$jekel','$alamat')";
 		$result = mysqli_query($this->getConnection(), $sql);
 		move_uploaded_file($_FILES['foto']['tmp_name'], "images/user/" . $_FILES['foto']['name']);
-		echo "<script>alert('Berhasil Register');history.go(-1);</script>";
+		echo "
+		<script>
+		alert('Berhasil Register');
+		window.location.replace('index.php');
+		</script>";
 	}
 
 	function hapus($id_user)
