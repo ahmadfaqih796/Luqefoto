@@ -249,7 +249,7 @@
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="submit" value="Daftar" class="btn btn-primary" onclick="submitForm()">
+											<input type="submit" value="Daftar" class="btn btn-primary">
 										</div>
 									</div>
 								</div>
