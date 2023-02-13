@@ -47,6 +47,7 @@
      <body>
      	<div class="container-fluid">
      		<div id="page-login" class="row">
+				
      			<div class="form-login" style="width: 300px;">
      				<div class="box">
      					<div class="box-content">
