@@ -179,7 +179,7 @@
 									<div class="col-md-6">
 										<div class="form-group">
 											<label>Foto</label>
-											<input type="file" class="form-control" name="foto" required>
+											<input type="file" class="form-control" name="foto">
 										</div>
 									</div>
 									<div class="col-md-6">
