@@ -53,6 +53,7 @@
      						<div class="text-center">
      							<h3 class="page-header">Login Ke Admin LUQEFOTO</h3>
      						</div>
+							<img src="../images/logo/Logo Hitam.png" alt="" style="width: 100%;">
      						<form role="form" action="" method="post">
      							<div class="form-group">
      								<label class="control-label">Username</label>
